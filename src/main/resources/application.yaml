@@ -1,3 +1,16 @@
+const:
+  default-page-size: 20
+
+file:
+  directory: D:\Students\download\greengram_ver6
+
+jwt:
+  issuer: green@green.kr
+  secret-key: study-springboot
+
+mybatis:
+  mapper-locations: mappers/**/*.xml
+
 spring:
   application:
     name: GreenGramVer6
@@ -24,11 +37,4 @@ springdoc:
   cache:
     disabled: true
 
-mybatis:
-  mapper-locations: mappers/**/*.xml
 
-file:
-  directory: D:\Students\download\greengram_ver6
-
-const:
-  default-page-size: 20
