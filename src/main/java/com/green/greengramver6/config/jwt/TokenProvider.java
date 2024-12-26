@@ -2,8 +2,11 @@ package com.green.greengramver6.config.jwt;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.green.greengramver6.common.exception.CustomException;
+import com.green.greengramver6.common.exception.UserErrorCode;
 import com.green.greengramver6.config.security.MyUserDetails;
 import io.jsonwebtoken.Claims;
+import io.jsonwebtoken.JwtBuilder;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
@@ -34,6 +37,15 @@ public class TokenProvider {
     }
 
     private String makeToken(JwtUser jwtUser, Date expiry) {
+
+        JwtBuilder builder = Jwts.builder();
+        JwtBuilder.BuilderHeader header = builder.header();
+        header.type("JWT");
+
+        builder.issuer(jwtProperties.getIssuer());
+
+
+        // JWT 암호화
         return Jwts.builder()
                 .header().add("typ", "JWT")
                          .add("alg", "HS256")
@@ -59,13 +71,14 @@ public class TokenProvider {
     public boolean validToken(String token) {
         try {
             //JWT 복호화
-            Jwts.parser().verifyWith(secretKey).build().parseSignedClaims(token);
-            return true;
+            getClaims(token);
         } catch (Exception e) {
-            return false;
+            throw new CustomException(UserErrorCode.EXPIRED_TOKEN);
         }
+        return true;
     }
 
+    //인증 처리를 해주어야 한다.
     public Authentication getAuthentication(String token) {
         UserDetails userDetails = getUserDetailsFromToken(token);
         return userDetails == null
@@ -73,10 +86,20 @@ public class TokenProvider {
                 : new UsernamePasswordAuthenticationToken(userDetails, null, userDetails.getAuthorities());
     }
 
-    public UserDetails getUserDetailsFromToken(String token) {
+    public JwtUser getJwtUserFromToken(String token) {
         Claims claims = getClaims(token);
-        String json = (String)claims.get("signedUser");
-        JwtUser jwtUser = objectMapper.convertValue(json, JwtUser.class);
+        String json = (String) claims.get("signedUser");
+        JwtUser jwtUser = null;
+        try {
+            jwtUser = objectMapper.readValue(json, JwtUser.class);
+        } catch (JsonProcessingException e) {
+            throw new RuntimeException(e);
+        }
+        return jwtUser;
+    }
+
+    public UserDetails getUserDetailsFromToken(String token) {
+        JwtUser jwtUser = getJwtUserFromToken(token);
         MyUserDetails userDetails = new MyUserDetails();
         userDetails.setJwtUser(jwtUser);
         return userDetails;

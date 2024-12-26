@@ -3,6 +3,7 @@ package com.green.greengramver6.feed;
 import com.green.greengramver6.common.model.ResultResponse;
 import com.green.greengramver6.feed.model.*;
 import io.swagger.v3.oas.annotations.Operation;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springdoc.core.annotations.ParameterObject;
@@ -19,8 +20,9 @@ public class FeedController {
     private final FeedService service;
 
     @PostMapping
+    @Operation(summary = "피드 등록", description = "필수: 사진리스트 || 옵션: 위치, 내용")
     public ResultResponse<FeedPostRes> postFeed(@RequestPart List<MultipartFile> pics
-                                              , @RequestPart FeedPostReq p) {
+                                              , @Valid  @RequestPart FeedPostReq p) {
         FeedPostRes res = service.postFeed(pics, p);
         return ResultResponse.<FeedPostRes>builder()
                 .resultMessage("피드 등록 완료")
@@ -29,12 +31,25 @@ public class FeedController {
     }
 
     @GetMapping
-    public ResultResponse<List<FeedGetRes>> getFeedList(@ParameterObject @ModelAttribute FeedGetReq p) {
+    @Operation(summary = "Feed 리스트 - N+1", description = "signed_user_id는 로그인한 사용자의 pk")
+    public ResultResponse<List<FeedGetRes>> getFeedList(@Valid @ParameterObject @ModelAttribute FeedGetReq p) {
+        log.info("FeedController > getFeedList > p: {}", p);
+        List<FeedGetRes> list = service.getFeedList(p);
+        return ResultResponse.<List<FeedGetRes>>builder()
+                .resultMessage(String.format("%d rows", list.size()))
+                .resultData(list)
+                .build();
+    }
+
+    @GetMapping("ver3")
+    @Operation(summary = "Feed 리스트 - No N+1", description = "signed_user_id는 로그인한 사용자의 pk")
+    public ResultResponse<List<FeedGetRes>> getFeedListVer3(@Valid @ParameterObject @ModelAttribute FeedGetReq p) {
+        log.info("FeedController > getFeedList > p: {}", p);
         List<FeedGetRes> list = service.getFeedList3(p);
         return ResultResponse.<List<FeedGetRes>>builder()
-                             .resultMessage(String.format("%d rows", list.size()))
-                             .resultData(list)
-                             .build();
+                .resultMessage(String.format("%d rows", list.size()))
+                .resultData(list)
+                .build();
     }
 
     @DeleteMapping

@@ -10,6 +10,8 @@ public class UserSignInRes {
     private long userId;
     private String nickName;
     private String pic;
+    private String accessToken;
+
     @JsonIgnore
     private String upw;
     @JsonIgnore

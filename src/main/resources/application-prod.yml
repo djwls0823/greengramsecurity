@@ -1,0 +1,7 @@
+file:
+  directory: /home/download
+
+spring:
+  datasource:
+    username: even_first_2
+    password: dfdfdfdfdf

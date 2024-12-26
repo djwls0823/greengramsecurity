@@ -10,6 +10,8 @@ public class FeedCommentPostReq {
     @JsonIgnore
     private long feedCommentId;
     private long feedId;
+
+    @JsonIgnore
     private long userId;
     private String comment;
 }

@@ -1,17 +1,26 @@
 package com.green.greengramver6.feed.comment.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Getter;
+import lombok.ToString;
 
 import java.beans.ConstructorProperties;
 
 @Getter
+@ToString
 public class FeedCommentDelReq {
+    @Schema(name = "feed_comment_id")
     private long feedCommentId;
-    private long signedUserId;
+    @JsonIgnore
+    private long userId;
 
-    @ConstructorProperties({"signed_user_id", "feed_comment_id"})
-    public FeedCommentDelReq(long signedUserId, long feedCommentId) {
-        this.signedUserId = signedUserId;
+    @ConstructorProperties({"feed_comment_id"})
+    public FeedCommentDelReq(long feedCommentId) {
         this.feedCommentId = feedCommentId;
+    }
+
+    public void setUserId(long userId) {
+        this.userId = userId;
     }
 }

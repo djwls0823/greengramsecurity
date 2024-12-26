@@ -8,7 +8,8 @@ import java.util.List;
 
 @Mapper
 public interface FeedPicMapper {
-    int insFeedPics(FeedPicDto p);
+    int insFeedPic(FeedPicDto p);
+    int insFeedPic2(FeedPicDto p);
     List<String> selFeedPicList(long feedId);
     List<FeedPicSel> selFeedPicListByFeedIds(List<Long> feedIds);
 }
