@@ -1,9 +1,6 @@
 package com.green.greengramver6.feed;
 
-import com.green.greengramver6.feed.model.FeedDeleteReq;
-import com.green.greengramver6.feed.model.FeedGetReq;
-import com.green.greengramver6.feed.model.FeedGetRes;
-import com.green.greengramver6.feed.model.FeedPostReq;
+import com.green.greengramver6.feed.model.*;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
@@ -12,7 +9,8 @@ import java.util.List;
 public interface FeedMapper {
     int insFeed(FeedPostReq p);
     List<FeedGetRes> selFeedList(FeedGetReq p);
-
+    List<FeedAndPicDto> selFeedWithPicList(FeedGetReq p);
+    List<FeedWithPicCommentDto> selFeedWithPicAndCommentLimit4List(FeedGetReq p);
 
     int delFeedLikeAndFeedCommentAndFeedPic(FeedDeleteReq p);
     int delFeed(FeedDeleteReq p);

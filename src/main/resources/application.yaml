@@ -2,7 +2,7 @@ const:
   default-page-size: 20
 
 file:
-  directory: D:\Students\download\greengram_ver6
+  directory: C:\lej\download\greengram
 
 jwt:
   issuer: green@green.kr
