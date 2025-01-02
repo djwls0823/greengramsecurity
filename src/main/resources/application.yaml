@@ -2,13 +2,15 @@ const:
   default-page-size: 20
 
 file:
-  directory: C:\lej\download\greengram
+  directory: D:\Students\download\greengramtdd
 
 jwt:
   issuer: green@green.kr
   secret-key: studyspringbootgahvhfeqwfhuojhnvujikbhvujkiabkjlhnujehfmxnbkjhuiwhbkjvxczbnvjkhhewuhqffkjakbmzbirgqwvmvmvgzkghjagfuygwerlqrgeilfilfwibhjv
 
 mybatis:
+  configuration:
+    map-underscore-to-camel-case: true #snake_case column명을 자동으로 camel_case형으로 변환
   mapper-locations: mappers/**/*.xml
 
 spring:

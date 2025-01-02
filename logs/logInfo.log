@@ -1242,3 +1242,1592 @@ java.sql.SQLSyntaxErrorException: (conn=462) Data too long for column 'pic' at r
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 [2024-12-27 13:17:43 INFO SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
 [2024-12-27 13:17:43 INFO SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[2024-12-30 11:05:34 INFO background-preinit] [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 8.0.1.Final
+[2024-12-30 11:05:34 INFO Test worker] [com.green.greengramver6.feed.like.FeedLikeMapperTest] Starting FeedLikeMapperTest using Java 17.0.12 with PID 6776 (started by Administrator in D:\lej\greengramtdd)
+[2024-12-30 11:05:34 INFO Test worker] [com.green.greengramver6.feed.like.FeedLikeMapperTest] The following 1 profile is active: "test"
+[2024-12-30 11:05:34 INFO Test worker] [com.green.greengramver6.feed.like.FeedLikeMapperTest] Started FeedLikeMapperTest in 1.093 seconds (process running for 2.121)
+[2024-12-30 11:05:35 INFO Test worker] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2024-12-30 11:05:35 WARN Test worker] [org.mariadb.jdbc.message.server.ErrorPacket] Error: 1049-42000: Unknown database 'greengram_ver3_test'
+[2024-12-30 11:05:36 WARN Test worker] [org.springframework.test.context.TestContextManager] Caught exception while invoking 'beforeTestMethod' callback on TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] for test method [void com.green.greengramver6.feed.like.FeedLikeMapperTest.insFeedLike()] and test instance [com.green.greengramver6.feed.like.FeedLikeMapperTest@1cde374]
+org.springframework.transaction.CannotCreateTransactionException: Could not open JDBC Connection for transaction
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:313)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.startTransaction(AbstractPlatformTransactionManager.java:532)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:405)
+	at org.springframework.test.context.transaction.TransactionContext.startTransaction(TransactionContext.java:103)
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener.beforeTestMethod(TransactionalTestExecutionListener.java:236)
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:320)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.beforeEach(SpringExtension.java:240)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeEachCallbacks$2(TestMethodTestDescriptor.java:167)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeMethodsOrCallbacksUntilExceptionOccurs$6(TestMethodTestDescriptor.java:203)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeMethodsOrCallbacksUntilExceptionOccurs(TestMethodTestDescriptor.java:203)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeEachCallbacks(TestMethodTestDescriptor.java:166)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:133)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:124)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:99)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:94)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:63)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
+	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:200)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:121)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+Caused by: java.sql.SQLSyntaxErrorException: (conn=3) Unknown database 'greengram_ver3_test'
+	at org.mariadb.jdbc.export.ExceptionFactory.createException(ExceptionFactory.java:289)
+	at org.mariadb.jdbc.export.ExceptionFactory.create(ExceptionFactory.java:378)
+	at org.mariadb.jdbc.client.impl.ConnectionHelper.authenticationHandler(ConnectionHelper.java:279)
+	at org.mariadb.jdbc.client.impl.StandardClient.<init>(StandardClient.java:195)
+	at org.mariadb.jdbc.Driver.connect(Driver.java:69)
+	at org.mariadb.jdbc.Driver.connect(Driver.java:95)
+	at org.mariadb.jdbc.Driver.connect(Driver.java:26)
+	at net.sf.log4jdbc.sql.jdbcapi.DriverSpy.connect(DriverSpy.java:401)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:269)
+	... 75 common frames omitted
+[2024-12-30 11:07:33 INFO background-preinit] [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 8.0.1.Final
+[2024-12-30 11:07:33 INFO Test worker] [com.green.greengramver6.feed.like.FeedLikeMapperTest] Starting FeedLikeMapperTest using Java 17.0.12 with PID 2592 (started by Administrator in D:\lej\greengramtdd)
+[2024-12-30 11:07:33 INFO Test worker] [com.green.greengramver6.feed.like.FeedLikeMapperTest] The following 1 profile is active: "test"
+[2024-12-30 11:07:33 INFO Test worker] [com.green.greengramver6.feed.like.FeedLikeMapperTest] Started FeedLikeMapperTest in 0.917 seconds (process running for 1.801)
+[2024-12-30 11:07:33 INFO Test worker] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2024-12-30 11:07:33 WARN Test worker] [org.mariadb.jdbc.message.server.ErrorPacket] Error: 1049-42000: Unknown database 'greengram_ver3_test'
+[2024-12-30 11:07:34 WARN Test worker] [org.springframework.test.context.TestContextManager] Caught exception while invoking 'beforeTestMethod' callback on TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] for test method [void com.green.greengramver6.feed.like.FeedLikeMapperTest.insFeedLike()] and test instance [com.green.greengramver6.feed.like.FeedLikeMapperTest@11826398]
+org.springframework.transaction.CannotCreateTransactionException: Could not open JDBC Connection for transaction
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:313)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.startTransaction(AbstractPlatformTransactionManager.java:532)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:405)
+	at org.springframework.test.context.transaction.TransactionContext.startTransaction(TransactionContext.java:103)
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener.beforeTestMethod(TransactionalTestExecutionListener.java:236)
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:320)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.beforeEach(SpringExtension.java:240)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeEachCallbacks$2(TestMethodTestDescriptor.java:167)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeMethodsOrCallbacksUntilExceptionOccurs$6(TestMethodTestDescriptor.java:203)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeMethodsOrCallbacksUntilExceptionOccurs(TestMethodTestDescriptor.java:203)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeEachCallbacks(TestMethodTestDescriptor.java:166)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:133)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:124)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:99)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:94)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:63)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
+	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:200)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:121)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+Caused by: java.sql.SQLSyntaxErrorException: (conn=4) Unknown database 'greengram_ver3_test'
+	at org.mariadb.jdbc.export.ExceptionFactory.createException(ExceptionFactory.java:289)
+	at org.mariadb.jdbc.export.ExceptionFactory.create(ExceptionFactory.java:378)
+	at org.mariadb.jdbc.client.impl.ConnectionHelper.authenticationHandler(ConnectionHelper.java:279)
+	at org.mariadb.jdbc.client.impl.StandardClient.<init>(StandardClient.java:195)
+	at org.mariadb.jdbc.Driver.connect(Driver.java:69)
+	at org.mariadb.jdbc.Driver.connect(Driver.java:95)
+	at org.mariadb.jdbc.Driver.connect(Driver.java:26)
+	at net.sf.log4jdbc.sql.jdbcapi.DriverSpy.connect(DriverSpy.java:401)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:269)
+	... 75 common frames omitted
+[2024-12-30 11:10:48 INFO background-preinit] [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 8.0.1.Final
+[2024-12-30 11:10:48 INFO Test worker] [com.green.greengramver6.feed.like.FeedLikeMapperTest] Starting FeedLikeMapperTest using Java 17.0.12 with PID 9112 (started by Administrator in D:\lej\greengramtdd)
+[2024-12-30 11:10:48 INFO Test worker] [com.green.greengramver6.feed.like.FeedLikeMapperTest] The following 1 profile is active: "test"
+[2024-12-30 11:10:49 INFO Test worker] [com.green.greengramver6.feed.like.FeedLikeMapperTest] Started FeedLikeMapperTest in 0.922 seconds (process running for 1.806)
+[2024-12-30 11:10:49 INFO Test worker] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2024-12-30 11:10:49 WARN Test worker] [org.mariadb.jdbc.message.server.ErrorPacket] Error: 1049-42000: Unknown database 'greengram_ver3_test'
+[2024-12-30 11:10:50 WARN Test worker] [org.springframework.test.context.TestContextManager] Caught exception while invoking 'beforeTestMethod' callback on TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] for test method [void com.green.greengramver6.feed.like.FeedLikeMapperTest.insFeedLikeDuplicateDataThrowDuplicateKeyException()] and test instance [com.green.greengramver6.feed.like.FeedLikeMapperTest@33bdd01]
+org.springframework.transaction.CannotCreateTransactionException: Could not open JDBC Connection for transaction
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:313)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.startTransaction(AbstractPlatformTransactionManager.java:532)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:405)
+	at org.springframework.test.context.transaction.TransactionContext.startTransaction(TransactionContext.java:103)
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener.beforeTestMethod(TransactionalTestExecutionListener.java:236)
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:320)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.beforeEach(SpringExtension.java:240)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeEachCallbacks$2(TestMethodTestDescriptor.java:167)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeMethodsOrCallbacksUntilExceptionOccurs$6(TestMethodTestDescriptor.java:203)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeMethodsOrCallbacksUntilExceptionOccurs(TestMethodTestDescriptor.java:203)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeEachCallbacks(TestMethodTestDescriptor.java:166)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:133)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:124)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:99)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:94)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:63)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
+	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:200)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:121)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+Caused by: java.sql.SQLSyntaxErrorException: (conn=6) Unknown database 'greengram_ver3_test'
+	at org.mariadb.jdbc.export.ExceptionFactory.createException(ExceptionFactory.java:289)
+	at org.mariadb.jdbc.export.ExceptionFactory.create(ExceptionFactory.java:378)
+	at org.mariadb.jdbc.client.impl.ConnectionHelper.authenticationHandler(ConnectionHelper.java:279)
+	at org.mariadb.jdbc.client.impl.StandardClient.<init>(StandardClient.java:195)
+	at org.mariadb.jdbc.Driver.connect(Driver.java:69)
+	at org.mariadb.jdbc.Driver.connect(Driver.java:95)
+	at org.mariadb.jdbc.Driver.connect(Driver.java:26)
+	at net.sf.log4jdbc.sql.jdbcapi.DriverSpy.connect(DriverSpy.java:401)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:269)
+	... 75 common frames omitted
+[2024-12-30 11:12:49 INFO background-preinit] [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 8.0.1.Final
+[2024-12-30 11:12:49 INFO restartedMain] [com.green.greengramver6.GreenGramVer6Application] Starting GreenGramVer6Application using Java 17.0.12 with PID 5236 (D:\lej\greengramtdd\build\classes\java\main started by Administrator in D:\lej\greengramtdd)
+[2024-12-30 11:12:49 INFO restartedMain] [com.green.greengramver6.GreenGramVer6Application] No active profile set, falling back to 1 default profile: "default"
+[2024-12-30 11:12:49 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-12-30 11:12:49 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-12-30 11:12:50 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
+[2024-12-30 11:12:50 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[2024-12-30 11:12:50 INFO restartedMain] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+[2024-12-30 11:12:50 INFO restartedMain] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.33]
+[2024-12-30 11:12:50 INFO restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[2024-12-30 11:12:50 INFO restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 959 ms
+[2024-12-30 11:12:50 INFO restartedMain] [com.green.greengramver6.common.MyFileUtils] MyFileUtils - 생성자: D:\Students\download\greengramtdd
+[2024-12-30 11:12:50 INFO restartedMain] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2024-12-30 11:12:50 INFO restartedMain] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@1fc90861
+[2024-12-30 11:12:50 INFO restartedMain] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2024-12-30 11:12:50 WARN restartedMain] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
+
+Using generated security password: ea978c92-8566-4de6-b016-b8a0eb48d8be
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[2024-12-30 11:12:50 INFO restartedMain] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+[2024-12-30 11:12:50 INFO restartedMain] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-12-30 11:12:51 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
+[2024-12-30 11:12:51 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[2024-12-30 11:12:51 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
+[2024-12-30 11:12:51 INFO restartedMain] [com.green.greengramver6.GreenGramVer6Application] Started GreenGramVer6Application in 2.109 seconds (process running for 2.593)
+[2024-12-30 11:13:12 INFO SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[2024-12-30 11:13:12 INFO SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[2024-12-30 11:13:33 INFO background-preinit] [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 8.0.1.Final
+[2024-12-30 11:13:33 INFO Test worker] [com.green.greengramver6.feed.like.FeedLikeMapperTest] Starting FeedLikeMapperTest using Java 17.0.12 with PID 6444 (started by Administrator in D:\lej\greengramtdd)
+[2024-12-30 11:13:33 INFO Test worker] [com.green.greengramver6.feed.like.FeedLikeMapperTest] The following 1 profile is active: "test"
+[2024-12-30 11:13:34 INFO Test worker] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2024-12-30 11:13:34 INFO Test worker] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@25ce435
+[2024-12-30 11:13:34 INFO Test worker] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2024-12-30 11:13:34 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE DATABASE IF NOT EXISTS `greengram_ver3_test`
+ {executed in 0 msec}
+[2024-12-30 11:13:34 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. USE `greengram_ver3_test`
+ {executed in 1 msec}
+[2024-12-30 11:13:34 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `feed_pic`
+ {executed in 8 msec}
+[2024-12-30 11:13:34 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `feed_like`
+ {executed in 5 msec}
+[2024-12-30 11:13:34 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `feed_comment`
+ {executed in 5 msec}
+[2024-12-30 11:13:34 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `feed`
+ {executed in 5 msec}
+[2024-12-30 11:13:34 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `user_follow`
+ {executed in 5 msec}
+[2024-12-30 11:13:34 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `user`
+ {executed in 5 msec}
+[2024-12-30 11:13:34 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `user` ( `user_id` bigint(20) NOT NULL AUTO_INCREMENT, `uid` varchar(30) NOT NULL, `upw` varchar(100) NOT NULL, `nick_name` varchar(30) DEFAULT NULL, `pic` varchar(50) DEFAULT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), `updated_at` datetime DEFAULT NULL ON UPDATE current_timestamp(), PRIMARY KEY (`user_id`), UNIQUE KEY `uid` (`uid`) )
+ {executed in 8 msec}
+[2024-12-30 11:13:34 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `user_follow` ( `from_user_id` bigint(20) NOT NULL, `to_user_id` bigint(20) NOT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), PRIMARY KEY (`from_user_id`,`to_user_id`), KEY `to_user_id` (`to_user_id`), CONSTRAINT `user_follow_ibfk_1` FOREIGN KEY (`from_user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE, CONSTRAINT `user_follow_ibfk_2` FOREIGN KEY (`to_user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE, CONSTRAINT `CONSTRAINT_1` CHECK (`from_user_id` <> `to_user_id`) )
+ {executed in 7 msec}
+[2024-12-30 11:13:34 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `feed` ( `feed_id` bigint(20) NOT NULL AUTO_INCREMENT, `writer_user_id` bigint(20) NOT NULL, `contents` varchar(1000) DEFAULT NULL, `location` varchar(30) DEFAULT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), `updated_at` datetime DEFAULT NULL ON UPDATE current_timestamp(), PRIMARY KEY (`feed_id`), KEY `FK_FEED_writer_user_id` (`writer_user_id`), CONSTRAINT `FK_FEED_writer_user_id` FOREIGN KEY (`writer_user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE )
+ {executed in 8 msec}
+[2024-12-30 11:13:34 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `feed_comment` ( `feed_comment_id` bigint(20) NOT NULL AUTO_INCREMENT, `feed_id` bigint(20) NOT NULL, `user_id` bigint(20) NOT NULL, `COMMENT` varchar(150) NOT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), `updated_at` datetime DEFAULT NULL ON UPDATE current_timestamp(), PRIMARY KEY (`feed_comment_id`), KEY `feed_id` (`feed_id`), KEY `user_id` (`user_id`), CONSTRAINT `feed_comment_ibfk_1` FOREIGN KEY (`feed_id`) REFERENCES `feed` (`feed_id`) ON DELETE CASCADE, CONSTRAINT `feed_comment_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE )
+ {executed in 9 msec}
+[2024-12-30 11:13:34 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `feed_like` ( `feed_id` bigint(20) NOT NULL, `user_id` bigint(20) NOT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), PRIMARY KEY (`feed_id`,`user_id`), KEY `user_id` (`user_id`), CONSTRAINT `feed_like_ibfk_1` FOREIGN KEY (`feed_id`) REFERENCES `feed` (`feed_id`) ON DELETE CASCADE, CONSTRAINT `feed_like_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE )
+ {executed in 7 msec}
+[2024-12-30 11:13:34 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `feed_pic` ( `feed_id` bigint(20) NOT NULL, `pic` varchar(50) NOT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), PRIMARY KEY (`feed_id`,`pic`), CONSTRAINT `feed_pic_ibfk_1` FOREIGN KEY (`feed_id`) REFERENCES `feed` (`feed_id`) ON DELETE CASCADE )
+ {executed in 7 msec}
+[2024-12-30 11:13:34 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. INSERT INTO `user` (`user_id`, `uid`, `upw`, `nick_name`, `pic`, `created_at`) VALUES (1, 'mic', '$2a$10$cVRpfytmEdzvs1I4oqqRXOWUleJHm6xKjOnHqA3EEJ5.Q0cAtbhte', '홍길동', NULL, '2024-11-01 10:10:01'), (2, 'jacob', '$2a$10$cVRpfytmEdzvs1I4oqqRXOWUleJHm6xKjOnHqA3EEJ5.Q0cAtbhte', '제이콥', NULL, '2024-11-01 10:10:02')
+ {executed in 3 msec}
+[2024-12-30 11:13:34 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. INSERT INTO `feed` (`feed_id`, `writer_user_id`, `contents`, `location`, `created_at`, `updated_at`) VALUES (1, 1, '1번 글', '1번 위치', '2024-11-01 10:10:01', NULL), (2, 2, '2번 글', '2번 위치', '2024-11-01 10:10:02', NULL), (3, 1, '3번 글', '3번 위치', '2024-11-01 10:10:03', NULL), (4, 2, '4번 글', '4번 위치', '2024-11-01 10:10:04', NULL), (5, 1, '5번 글', '5번 위치', '2024-11-01 10:10:05', NULL)
+ {executed in 2 msec}
+[2024-12-30 11:13:34 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. INSERT INTO `feed_like` (`feed_id`, `user_id`, `created_at`) VALUES (1, 2, '2024-11-01 10:10:01'), (2, 1, '2024-11-01 10:10:02'), (3, 2, '2024-11-01 10:10:03')
+ {executed in 2 msec}
+[2024-12-30 11:13:34 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. INSERT INTO `feed_comment` (`feed_comment_id`, `feed_id`, `user_id`, `COMMENT`, `created_at`) VALUES (1, 1, 1, '1번 댓글', '2024-11-01 10:10:01'), (2, 2, 2, '2번 댓글', '2024-11-01 10:10:02'), (3, 3, 1, '3번 댓글', '2024-11-01 10:10:03'), (4, 4, 2, '4번 댓글', '2024-11-01 10:10:04'), (5, 5, 1, '5번 댓글', '2024-11-01 10:10:05'), (6, 1, 2, '6번 댓글', '2024-11-01 10:10:06')
+ {executed in 2 msec}
+[2024-12-30 11:13:34 INFO Test worker] [com.green.greengramver6.feed.like.FeedLikeMapperTest] Started FeedLikeMapperTest in 1.111 seconds (process running for 1.983)
+[2024-12-30 11:13:35 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT * FROM feed_like
+ {executed in 1 msec}
+[2024-12-30 11:13:35 INFO Test worker] [jdbc.resultsettable] 
+|--------|--------|--------------------|
+|feed_id |user_id |created_at          |
+|--------|--------|--------------------|
+|1       |2       |2024-11-01 10:10:01 |
+|2       |1       |2024-11-01 10:10:02 |
+|3       |2       |2024-11-01 10:10:03 |
+|--------|--------|--------------------|
+
+[2024-12-30 11:13:35 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT * FROM feed_like WHERE feed_id = 5 AND user_id =2
+ {executed in 1 msec}
+[2024-12-30 11:13:35 INFO Test worker] [jdbc.resultsettable] 
+|--------|--------|-----------|
+|feed_id |user_id |created_at |
+|--------|--------|-----------|
+|--------|--------|-----------|
+
+[2024-12-30 11:13:35 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. INSERT INTO feed_like
+           SET feed_id = 5
+             , user_id = 2
+ {executed in 0 msec}
+[2024-12-30 11:13:35 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT * FROM feed_like WHERE feed_id = 5 AND user_id =2
+ {executed in 1 msec}
+[2024-12-30 11:13:35 INFO Test worker] [jdbc.resultsettable] 
+|--------|--------|--------------------|
+|feed_id |user_id |created_at          |
+|--------|--------|--------------------|
+|5       |2       |2024-12-30 11:13:35 |
+|--------|--------|--------------------|
+
+[2024-12-30 11:13:35 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT * FROM feed_like
+ {executed in 0 msec}
+[2024-12-30 11:13:35 INFO Test worker] [jdbc.resultsettable] 
+|--------|--------|--------------------|
+|feed_id |user_id |created_at          |
+|--------|--------|--------------------|
+|1       |2       |2024-11-01 10:10:01 |
+|2       |1       |2024-11-01 10:10:02 |
+|3       |2       |2024-11-01 10:10:03 |
+|5       |2       |2024-12-30 11:13:35 |
+|--------|--------|--------------------|
+
+[2024-12-30 11:13:35 INFO SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[2024-12-30 11:13:35 INFO SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[2024-12-30 11:47:15 INFO background-preinit] [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 8.0.1.Final
+[2024-12-30 11:47:15 INFO Test worker] [com.green.greengramver6.feed.like.FeedLikeMapperTest] Starting FeedLikeMapperTest using Java 17.0.12 with PID 3480 (started by Administrator in D:\lej\greengramtdd)
+[2024-12-30 11:47:15 INFO Test worker] [com.green.greengramver6.feed.like.FeedLikeMapperTest] The following 1 profile is active: "test"
+[2024-12-30 11:47:15 INFO Test worker] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2024-12-30 11:47:15 INFO Test worker] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@3bbb8c16
+[2024-12-30 11:47:15 INFO Test worker] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2024-12-30 11:47:15 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE DATABASE IF NOT EXISTS `greengram_ver3_test`
+ {executed in 0 msec}
+[2024-12-30 11:47:15 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. USE `greengram_ver3_test`
+ {executed in 0 msec}
+[2024-12-30 11:47:15 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `feed_pic`
+ {executed in 10 msec}
+[2024-12-30 11:47:15 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `feed_like`
+ {executed in 10 msec}
+[2024-12-30 11:47:15 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `feed_comment`
+ {executed in 10 msec}
+[2024-12-30 11:47:15 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `feed`
+ {executed in 0 msec}
+[2024-12-30 11:47:15 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `user_follow`
+ {executed in 10 msec}
+[2024-12-30 11:47:15 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `user`
+ {executed in 0 msec}
+[2024-12-30 11:47:15 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `user` ( `user_id` bigint(20) NOT NULL AUTO_INCREMENT, `uid` varchar(30) NOT NULL, `upw` varchar(100) NOT NULL, `nick_name` varchar(30) DEFAULT NULL, `pic` varchar(50) DEFAULT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), `updated_at` datetime DEFAULT NULL ON UPDATE current_timestamp(), PRIMARY KEY (`user_id`), UNIQUE KEY `uid` (`uid`) )
+ {executed in 10 msec}
+[2024-12-30 11:47:15 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `user_follow` ( `from_user_id` bigint(20) NOT NULL, `to_user_id` bigint(20) NOT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), PRIMARY KEY (`from_user_id`,`to_user_id`), KEY `to_user_id` (`to_user_id`), CONSTRAINT `user_follow_ibfk_1` FOREIGN KEY (`from_user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE, CONSTRAINT `user_follow_ibfk_2` FOREIGN KEY (`to_user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE, CONSTRAINT `CONSTRAINT_1` CHECK (`from_user_id` <> `to_user_id`) )
+ {executed in 10 msec}
+[2024-12-30 11:47:16 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `feed` ( `feed_id` bigint(20) NOT NULL AUTO_INCREMENT, `writer_user_id` bigint(20) NOT NULL, `contents` varchar(1000) DEFAULT NULL, `location` varchar(30) DEFAULT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), `updated_at` datetime DEFAULT NULL ON UPDATE current_timestamp(), PRIMARY KEY (`feed_id`), KEY `FK_FEED_writer_user_id` (`writer_user_id`), CONSTRAINT `FK_FEED_writer_user_id` FOREIGN KEY (`writer_user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE )
+ {executed in 10 msec}
+[2024-12-30 11:47:16 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `feed_comment` ( `feed_comment_id` bigint(20) NOT NULL AUTO_INCREMENT, `feed_id` bigint(20) NOT NULL, `user_id` bigint(20) NOT NULL, `COMMENT` varchar(150) NOT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), `updated_at` datetime DEFAULT NULL ON UPDATE current_timestamp(), PRIMARY KEY (`feed_comment_id`), KEY `feed_id` (`feed_id`), KEY `user_id` (`user_id`), CONSTRAINT `feed_comment_ibfk_1` FOREIGN KEY (`feed_id`) REFERENCES `feed` (`feed_id`) ON DELETE CASCADE, CONSTRAINT `feed_comment_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE )
+ {executed in 5 msec}
+[2024-12-30 11:47:16 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `feed_like` ( `feed_id` bigint(20) NOT NULL, `user_id` bigint(20) NOT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), PRIMARY KEY (`feed_id`,`user_id`), KEY `user_id` (`user_id`), CONSTRAINT `feed_like_ibfk_1` FOREIGN KEY (`feed_id`) REFERENCES `feed` (`feed_id`) ON DELETE CASCADE, CONSTRAINT `feed_like_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE )
+ {executed in 0 msec}
+[2024-12-30 11:47:16 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `feed_pic` ( `feed_id` bigint(20) NOT NULL, `pic` varchar(50) NOT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), PRIMARY KEY (`feed_id`,`pic`), CONSTRAINT `feed_pic_ibfk_1` FOREIGN KEY (`feed_id`) REFERENCES `feed` (`feed_id`) ON DELETE CASCADE )
+ {executed in 10 msec}
+[2024-12-30 11:47:16 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. INSERT INTO `user` (`user_id`, `uid`, `upw`, `nick_name`, `pic`, `created_at`) VALUES (1, 'mic', '$2a$10$cVRpfytmEdzvs1I4oqqRXOWUleJHm6xKjOnHqA3EEJ5.Q0cAtbhte', '홍길동', NULL, '2024-11-01 10:10:01'), (2, 'jacob', '$2a$10$cVRpfytmEdzvs1I4oqqRXOWUleJHm6xKjOnHqA3EEJ5.Q0cAtbhte', '제이콥', NULL, '2024-11-01 10:10:02')
+ {executed in 10 msec}
+[2024-12-30 11:47:16 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. INSERT INTO `feed` (`feed_id`, `writer_user_id`, `contents`, `location`, `created_at`, `updated_at`) VALUES (1, 1, '1번 글', '1번 위치', '2024-11-01 10:10:01', NULL), (2, 2, '2번 글', '2번 위치', '2024-11-01 10:10:02', NULL), (3, 1, '3번 글', '3번 위치', '2024-11-01 10:10:03', NULL), (4, 2, '4번 글', '4번 위치', '2024-11-01 10:10:04', NULL), (5, 1, '5번 글', '5번 위치', '2024-11-01 10:10:05', NULL)
+ {executed in 0 msec}
+[2024-12-30 11:47:16 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. INSERT INTO `feed_like` (`feed_id`, `user_id`, `created_at`) VALUES (1, 2, '2024-11-01 10:10:01'), (2, 1, '2024-11-01 10:10:02'), (3, 2, '2024-11-01 10:10:03')
+ {executed in 0 msec}
+[2024-12-30 11:47:16 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. INSERT INTO `feed_comment` (`feed_comment_id`, `feed_id`, `user_id`, `COMMENT`, `created_at`) VALUES (1, 1, 1, '1번 댓글', '2024-11-01 10:10:01'), (2, 2, 2, '2번 댓글', '2024-11-01 10:10:02'), (3, 3, 1, '3번 댓글', '2024-11-01 10:10:03'), (4, 4, 2, '4번 댓글', '2024-11-01 10:10:04'), (5, 5, 1, '5번 댓글', '2024-11-01 10:10:05'), (6, 1, 2, '6번 댓글', '2024-11-01 10:10:06')
+ {executed in 0 msec}
+[2024-12-30 11:47:16 INFO Test worker] [com.green.greengramver6.feed.like.FeedLikeMapperTest] Started FeedLikeMapperTest in 1.13 seconds (process running for 2.038)
+[2024-12-30 11:47:16 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT * FROM feed_like
+ {executed in 0 msec}
+[2024-12-30 11:47:16 INFO Test worker] [jdbc.resultsettable] 
+|--------|--------|--------------------|
+|feed_id |user_id |created_at          |
+|--------|--------|--------------------|
+|1       |2       |2024-11-01 10:10:01 |
+|2       |1       |2024-11-01 10:10:02 |
+|3       |2       |2024-11-01 10:10:03 |
+|--------|--------|--------------------|
+
+[2024-12-30 11:47:16 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT * FROM feed_like WHERE feed_id = 5 AND user_id =2
+ {executed in 0 msec}
+[2024-12-30 11:47:16 INFO Test worker] [jdbc.resultsettable] 
+|--------|--------|-----------|
+|feed_id |user_id |created_at |
+|--------|--------|-----------|
+|--------|--------|-----------|
+
+[2024-12-30 11:47:16 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. INSERT INTO feed_like
+           SET feed_id = 5
+             , user_id = 2
+ {executed in 0 msec}
+[2024-12-30 11:47:16 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT * FROM feed_like WHERE feed_id = 5 AND user_id =2
+ {executed in 0 msec}
+[2024-12-30 11:47:16 INFO Test worker] [jdbc.resultsettable] 
+|--------|--------|--------------------|
+|feed_id |user_id |created_at          |
+|--------|--------|--------------------|
+|5       |2       |2024-12-30 11:47:16 |
+|--------|--------|--------------------|
+
+[2024-12-30 11:47:16 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT * FROM feed_like
+ {executed in 0 msec}
+[2024-12-30 11:47:16 INFO Test worker] [jdbc.resultsettable] 
+|--------|--------|--------------------|
+|feed_id |user_id |created_at          |
+|--------|--------|--------------------|
+|1       |2       |2024-11-01 10:10:01 |
+|2       |1       |2024-11-01 10:10:02 |
+|3       |2       |2024-11-01 10:10:03 |
+|5       |2       |2024-12-30 11:47:16 |
+|--------|--------|--------------------|
+
+[2024-12-30 11:47:16 INFO SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[2024-12-30 11:47:16 INFO SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[2024-12-30 11:48:43 INFO background-preinit] [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 8.0.1.Final
+[2024-12-30 11:48:43 INFO Test worker] [com.green.greengramver6.feed.like.FeedLikeMapperTest] Starting FeedLikeMapperTest using Java 17.0.12 with PID 5564 (started by Administrator in D:\lej\greengramtdd)
+[2024-12-30 11:48:43 INFO Test worker] [com.green.greengramver6.feed.like.FeedLikeMapperTest] The following 1 profile is active: "test"
+[2024-12-30 11:48:44 INFO Test worker] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2024-12-30 11:48:44 INFO Test worker] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@1a2e563e
+[2024-12-30 11:48:44 INFO Test worker] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2024-12-30 11:48:44 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE DATABASE IF NOT EXISTS `greengram_ver3_test`
+ {executed in 0 msec}
+[2024-12-30 11:48:44 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. USE `greengram_ver3_test`
+ {executed in 0 msec}
+[2024-12-30 11:48:44 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `feed_pic`
+ {executed in 16 msec}
+[2024-12-30 11:48:44 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `feed_like`
+ {executed in 0 msec}
+[2024-12-30 11:48:44 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `feed_comment`
+ {executed in 15 msec}
+[2024-12-30 11:48:44 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `feed`
+ {executed in 6 msec}
+[2024-12-30 11:48:44 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `user_follow`
+ {executed in 6 msec}
+[2024-12-30 11:48:44 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `user`
+ {executed in 5 msec}
+[2024-12-30 11:48:44 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `user` ( `user_id` bigint(20) NOT NULL AUTO_INCREMENT, `uid` varchar(30) NOT NULL, `upw` varchar(100) NOT NULL, `nick_name` varchar(30) DEFAULT NULL, `pic` varchar(50) DEFAULT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), `updated_at` datetime DEFAULT NULL ON UPDATE current_timestamp(), PRIMARY KEY (`user_id`), UNIQUE KEY `uid` (`uid`) )
+ {executed in 0 msec}
+[2024-12-30 11:48:44 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `user_follow` ( `from_user_id` bigint(20) NOT NULL, `to_user_id` bigint(20) NOT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), PRIMARY KEY (`from_user_id`,`to_user_id`), KEY `to_user_id` (`to_user_id`), CONSTRAINT `user_follow_ibfk_1` FOREIGN KEY (`from_user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE, CONSTRAINT `user_follow_ibfk_2` FOREIGN KEY (`to_user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE, CONSTRAINT `CONSTRAINT_1` CHECK (`from_user_id` <> `to_user_id`) )
+ {executed in 16 msec}
+[2024-12-30 11:48:44 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `feed` ( `feed_id` bigint(20) NOT NULL AUTO_INCREMENT, `writer_user_id` bigint(20) NOT NULL, `contents` varchar(1000) DEFAULT NULL, `location` varchar(30) DEFAULT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), `updated_at` datetime DEFAULT NULL ON UPDATE current_timestamp(), PRIMARY KEY (`feed_id`), KEY `FK_FEED_writer_user_id` (`writer_user_id`), CONSTRAINT `FK_FEED_writer_user_id` FOREIGN KEY (`writer_user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE )
+ {executed in 0 msec}
+[2024-12-30 11:48:44 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `feed_comment` ( `feed_comment_id` bigint(20) NOT NULL AUTO_INCREMENT, `feed_id` bigint(20) NOT NULL, `user_id` bigint(20) NOT NULL, `COMMENT` varchar(150) NOT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), `updated_at` datetime DEFAULT NULL ON UPDATE current_timestamp(), PRIMARY KEY (`feed_comment_id`), KEY `feed_id` (`feed_id`), KEY `user_id` (`user_id`), CONSTRAINT `feed_comment_ibfk_1` FOREIGN KEY (`feed_id`) REFERENCES `feed` (`feed_id`) ON DELETE CASCADE, CONSTRAINT `feed_comment_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE )
+ {executed in 11 msec}
+[2024-12-30 11:48:44 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `feed_like` ( `feed_id` bigint(20) NOT NULL, `user_id` bigint(20) NOT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), PRIMARY KEY (`feed_id`,`user_id`), KEY `user_id` (`user_id`), CONSTRAINT `feed_like_ibfk_1` FOREIGN KEY (`feed_id`) REFERENCES `feed` (`feed_id`) ON DELETE CASCADE, CONSTRAINT `feed_like_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE )
+ {executed in 15 msec}
+[2024-12-30 11:48:44 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `feed_pic` ( `feed_id` bigint(20) NOT NULL, `pic` varchar(50) NOT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), PRIMARY KEY (`feed_id`,`pic`), CONSTRAINT `feed_pic_ibfk_1` FOREIGN KEY (`feed_id`) REFERENCES `feed` (`feed_id`) ON DELETE CASCADE )
+ {executed in 0 msec}
+[2024-12-30 11:48:44 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. INSERT INTO `user` (`user_id`, `uid`, `upw`, `nick_name`, `pic`, `created_at`) VALUES (1, 'mic', '$2a$10$cVRpfytmEdzvs1I4oqqRXOWUleJHm6xKjOnHqA3EEJ5.Q0cAtbhte', '홍길동', NULL, '2024-11-01 10:10:01'), (2, 'jacob', '$2a$10$cVRpfytmEdzvs1I4oqqRXOWUleJHm6xKjOnHqA3EEJ5.Q0cAtbhte', '제이콥', NULL, '2024-11-01 10:10:02')
+ {executed in 0 msec}
+[2024-12-30 11:48:44 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. INSERT INTO `feed` (`feed_id`, `writer_user_id`, `contents`, `location`, `created_at`, `updated_at`) VALUES (1, 1, '1번 글', '1번 위치', '2024-11-01 10:10:01', NULL), (2, 2, '2번 글', '2번 위치', '2024-11-01 10:10:02', NULL), (3, 1, '3번 글', '3번 위치', '2024-11-01 10:10:03', NULL), (4, 2, '4번 글', '4번 위치', '2024-11-01 10:10:04', NULL), (5, 1, '5번 글', '5번 위치', '2024-11-01 10:10:05', NULL)
+ {executed in 16 msec}
+[2024-12-30 11:48:44 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. INSERT INTO `feed_like` (`feed_id`, `user_id`, `created_at`) VALUES (1, 2, '2024-11-01 10:10:01'), (2, 1, '2024-11-01 10:10:02'), (3, 2, '2024-11-01 10:10:03')
+ {executed in 0 msec}
+[2024-12-30 11:48:44 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. INSERT INTO `feed_comment` (`feed_comment_id`, `feed_id`, `user_id`, `COMMENT`, `created_at`) VALUES (1, 1, 1, '1번 댓글', '2024-11-01 10:10:01'), (2, 2, 2, '2번 댓글', '2024-11-01 10:10:02'), (3, 3, 1, '3번 댓글', '2024-11-01 10:10:03'), (4, 4, 2, '4번 댓글', '2024-11-01 10:10:04'), (5, 5, 1, '5번 댓글', '2024-11-01 10:10:05'), (6, 1, 2, '6번 댓글', '2024-11-01 10:10:06')
+ {executed in 0 msec}
+[2024-12-30 11:48:44 INFO Test worker] [com.green.greengramver6.feed.like.FeedLikeMapperTest] Started FeedLikeMapperTest in 1.204 seconds (process running for 2.098)
+[2024-12-30 11:48:44 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT * FROM feed_like
+ {executed in 0 msec}
+[2024-12-30 11:48:44 INFO Test worker] [jdbc.resultsettable] 
+|--------|--------|--------------------|
+|feed_id |user_id |created_at          |
+|--------|--------|--------------------|
+|1       |2       |2024-11-01 10:10:01 |
+|2       |1       |2024-11-01 10:10:02 |
+|3       |2       |2024-11-01 10:10:03 |
+|--------|--------|--------------------|
+
+[2024-12-30 11:48:44 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT * FROM feed_like WHERE feed_id = 5 AND user_id =2
+ {executed in 0 msec}
+[2024-12-30 11:48:44 INFO Test worker] [jdbc.resultsettable] 
+|--------|--------|-----------|
+|feed_id |user_id |created_at |
+|--------|--------|-----------|
+|--------|--------|-----------|
+
+[2024-12-30 11:48:44 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. INSERT INTO feed_like
+           SET feed_id = 5
+             , user_id = 2
+ {executed in 0 msec}
+[2024-12-30 11:48:44 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT * FROM feed_like WHERE feed_id = 5 AND user_id =2
+ {executed in 0 msec}
+[2024-12-30 11:48:44 INFO Test worker] [jdbc.resultsettable] 
+|--------|--------|--------------------|
+|feed_id |user_id |created_at          |
+|--------|--------|--------------------|
+|5       |2       |2024-12-30 11:48:44 |
+|--------|--------|--------------------|
+
+[2024-12-30 11:48:44 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT * FROM feed_like
+ {executed in 0 msec}
+[2024-12-30 11:48:44 INFO Test worker] [jdbc.resultsettable] 
+|--------|--------|--------------------|
+|feed_id |user_id |created_at          |
+|--------|--------|--------------------|
+|1       |2       |2024-11-01 10:10:01 |
+|2       |1       |2024-11-01 10:10:02 |
+|3       |2       |2024-11-01 10:10:03 |
+|5       |2       |2024-12-30 11:48:44 |
+|--------|--------|--------------------|
+
+[2024-12-30 11:48:45 INFO SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[2024-12-30 11:48:45 INFO SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[2024-12-30 12:07:22 INFO background-preinit] [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 8.0.1.Final
+[2024-12-30 12:07:22 INFO Test worker] [com.green.greengramver6.feed.like.FeedLikeMapperTest] Starting FeedLikeMapperTest using Java 17.0.12 with PID 7560 (started by Administrator in D:\lej\greengramtdd)
+[2024-12-30 12:07:22 INFO Test worker] [com.green.greengramver6.feed.like.FeedLikeMapperTest] The following 1 profile is active: "test"
+[2024-12-30 12:07:23 INFO Test worker] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2024-12-30 12:07:23 INFO Test worker] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@71c0b742
+[2024-12-30 12:07:23 INFO Test worker] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2024-12-30 12:07:23 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE DATABASE IF NOT EXISTS `greengram_ver3_test`
+ {executed in 0 msec}
+[2024-12-30 12:07:23 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. USE `greengram_ver3_test`
+ {executed in 0 msec}
+[2024-12-30 12:07:23 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `feed_pic`
+ {executed in 11 msec}
+[2024-12-30 12:07:23 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `feed_like`
+ {executed in 13 msec}
+[2024-12-30 12:07:23 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `feed_comment`
+ {executed in 0 msec}
+[2024-12-30 12:07:23 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `feed`
+ {executed in 14 msec}
+[2024-12-30 12:07:23 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `user_follow`
+ {executed in 6 msec}
+[2024-12-30 12:07:23 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `user`
+ {executed in 7 msec}
+[2024-12-30 12:07:23 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `user` ( `user_id` bigint(20) NOT NULL AUTO_INCREMENT, `uid` varchar(30) NOT NULL, `upw` varchar(100) NOT NULL, `nick_name` varchar(30) DEFAULT NULL, `pic` varchar(50) DEFAULT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), `updated_at` datetime DEFAULT NULL ON UPDATE current_timestamp(), PRIMARY KEY (`user_id`), UNIQUE KEY `uid` (`uid`) )
+ {executed in 0 msec}
+[2024-12-30 12:07:23 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `user_follow` ( `from_user_id` bigint(20) NOT NULL, `to_user_id` bigint(20) NOT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), PRIMARY KEY (`from_user_id`,`to_user_id`), KEY `to_user_id` (`to_user_id`), CONSTRAINT `user_follow_ibfk_1` FOREIGN KEY (`from_user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE, CONSTRAINT `user_follow_ibfk_2` FOREIGN KEY (`to_user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE, CONSTRAINT `CONSTRAINT_1` CHECK (`from_user_id` <> `to_user_id`) )
+ {executed in 15 msec}
+[2024-12-30 12:07:23 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `feed` ( `feed_id` bigint(20) NOT NULL AUTO_INCREMENT, `writer_user_id` bigint(20) NOT NULL, `contents` varchar(1000) DEFAULT NULL, `location` varchar(30) DEFAULT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), `updated_at` datetime DEFAULT NULL ON UPDATE current_timestamp(), PRIMARY KEY (`feed_id`), KEY `FK_FEED_writer_user_id` (`writer_user_id`), CONSTRAINT `FK_FEED_writer_user_id` FOREIGN KEY (`writer_user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE )
+ {executed in 0 msec}
+[2024-12-30 12:07:23 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `feed_comment` ( `feed_comment_id` bigint(20) NOT NULL AUTO_INCREMENT, `feed_id` bigint(20) NOT NULL, `user_id` bigint(20) NOT NULL, `COMMENT` varchar(150) NOT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), `updated_at` datetime DEFAULT NULL ON UPDATE current_timestamp(), PRIMARY KEY (`feed_comment_id`), KEY `feed_id` (`feed_id`), KEY `user_id` (`user_id`), CONSTRAINT `feed_comment_ibfk_1` FOREIGN KEY (`feed_id`) REFERENCES `feed` (`feed_id`) ON DELETE CASCADE, CONSTRAINT `feed_comment_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE )
+ {executed in 16 msec}
+[2024-12-30 12:07:23 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `feed_like` ( `feed_id` bigint(20) NOT NULL, `user_id` bigint(20) NOT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), PRIMARY KEY (`feed_id`,`user_id`), KEY `user_id` (`user_id`), CONSTRAINT `feed_like_ibfk_1` FOREIGN KEY (`feed_id`) REFERENCES `feed` (`feed_id`) ON DELETE CASCADE, CONSTRAINT `feed_like_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE )
+ {executed in 15 msec}
+[2024-12-30 12:07:23 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `feed_pic` ( `feed_id` bigint(20) NOT NULL, `pic` varchar(50) NOT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), PRIMARY KEY (`feed_id`,`pic`), CONSTRAINT `feed_pic_ibfk_1` FOREIGN KEY (`feed_id`) REFERENCES `feed` (`feed_id`) ON DELETE CASCADE )
+ {executed in 3 msec}
+[2024-12-30 12:07:23 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. INSERT INTO `user` (`user_id`, `uid`, `upw`, `nick_name`, `pic`, `created_at`) VALUES (1, 'mic', '$2a$10$cVRpfytmEdzvs1I4oqqRXOWUleJHm6xKjOnHqA3EEJ5.Q0cAtbhte', '홍길동', NULL, '2024-11-01 10:10:01'), (2, 'jacob', '$2a$10$cVRpfytmEdzvs1I4oqqRXOWUleJHm6xKjOnHqA3EEJ5.Q0cAtbhte', '제이콥', NULL, '2024-11-01 10:10:02')
+ {executed in 0 msec}
+[2024-12-30 12:07:23 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. INSERT INTO `feed` (`feed_id`, `writer_user_id`, `contents`, `location`, `created_at`, `updated_at`) VALUES (1, 1, '1번 글', '1번 위치', '2024-11-01 10:10:01', NULL), (2, 2, '2번 글', '2번 위치', '2024-11-01 10:10:02', NULL), (3, 1, '3번 글', '3번 위치', '2024-11-01 10:10:03', NULL), (4, 2, '4번 글', '4번 위치', '2024-11-01 10:10:04', NULL), (5, 1, '5번 글', '5번 위치', '2024-11-01 10:10:05', NULL)
+ {executed in 0 msec}
+[2024-12-30 12:07:23 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. INSERT INTO `feed_like` (`feed_id`, `user_id`, `created_at`) VALUES (1, 2, '2024-11-01 10:10:01'), (2, 1, '2024-11-01 10:10:02'), (3, 2, '2024-11-01 10:10:03')
+ {executed in 15 msec}
+[2024-12-30 12:07:23 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. INSERT INTO `feed_comment` (`feed_comment_id`, `feed_id`, `user_id`, `COMMENT`, `created_at`) VALUES (1, 1, 1, '1번 댓글', '2024-11-01 10:10:01'), (2, 2, 2, '2번 댓글', '2024-11-01 10:10:02'), (3, 3, 1, '3번 댓글', '2024-11-01 10:10:03'), (4, 4, 2, '4번 댓글', '2024-11-01 10:10:04'), (5, 5, 1, '5번 댓글', '2024-11-01 10:10:05'), (6, 1, 2, '6번 댓글', '2024-11-01 10:10:06')
+ {executed in 0 msec}
+[2024-12-30 12:07:23 INFO Test worker] [com.green.greengramver6.feed.like.FeedLikeMapperTest] Started FeedLikeMapperTest in 1.094 seconds (process running for 1.989)
+[2024-12-30 12:07:24 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT * FROM feed_like
+ {executed in 0 msec}
+[2024-12-30 12:07:24 INFO Test worker] [jdbc.resultsettable] 
+|--------|--------|--------------------|
+|feed_id |user_id |created_at          |
+|--------|--------|--------------------|
+|1       |2       |2024-11-01 10:10:01 |
+|2       |1       |2024-11-01 10:10:02 |
+|3       |2       |2024-11-01 10:10:03 |
+|--------|--------|--------------------|
+
+[2024-12-30 12:07:24 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT * FROM feed_like WHERE feed_id = 5 AND user_id =2
+ {executed in 0 msec}
+[2024-12-30 12:07:24 INFO Test worker] [jdbc.resultsettable] 
+|--------|--------|-----------|
+|feed_id |user_id |created_at |
+|--------|--------|-----------|
+|--------|--------|-----------|
+
+[2024-12-30 12:07:24 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. DELETE FROM feed_like
+         WHERE feed_id = 5
+           AND user_id = 2
+ {executed in 15 msec}
+[2024-12-30 12:07:24 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT * FROM feed_like WHERE feed_id = 5 AND user_id =2
+ {executed in 0 msec}
+[2024-12-30 12:07:24 INFO Test worker] [jdbc.resultsettable] 
+|--------|--------|-----------|
+|feed_id |user_id |created_at |
+|--------|--------|-----------|
+|--------|--------|-----------|
+
+[2024-12-30 12:07:24 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT * FROM feed_like
+ {executed in 7 msec}
+[2024-12-30 12:07:24 INFO Test worker] [jdbc.resultsettable] 
+|--------|--------|--------------------|
+|feed_id |user_id |created_at          |
+|--------|--------|--------------------|
+|1       |2       |2024-11-01 10:10:01 |
+|2       |1       |2024-11-01 10:10:02 |
+|3       |2       |2024-11-01 10:10:03 |
+|--------|--------|--------------------|
+
+[2024-12-30 12:07:24 INFO SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[2024-12-30 12:07:24 INFO SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[2024-12-30 12:09:17 INFO background-preinit] [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 8.0.1.Final
+[2024-12-30 12:09:17 INFO Test worker] [com.green.greengramver6.feed.like.FeedLikeMapperTest] Starting FeedLikeMapperTest using Java 17.0.12 with PID 7556 (started by Administrator in D:\lej\greengramtdd)
+[2024-12-30 12:09:17 INFO Test worker] [com.green.greengramver6.feed.like.FeedLikeMapperTest] The following 1 profile is active: "test"
+[2024-12-30 12:09:18 INFO Test worker] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2024-12-30 12:09:18 INFO Test worker] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@65600fb3
+[2024-12-30 12:09:18 INFO Test worker] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2024-12-30 12:09:18 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE DATABASE IF NOT EXISTS `greengram_ver3_test`
+ {executed in 0 msec}
+[2024-12-30 12:09:18 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. USE `greengram_ver3_test`
+ {executed in 0 msec}
+[2024-12-30 12:09:18 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `feed_pic`
+ {executed in 6 msec}
+[2024-12-30 12:09:18 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `feed_like`
+ {executed in 0 msec}
+[2024-12-30 12:09:18 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `feed_comment`
+ {executed in 15 msec}
+[2024-12-30 12:09:18 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `feed`
+ {executed in 0 msec}
+[2024-12-30 12:09:18 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `user_follow`
+ {executed in 0 msec}
+[2024-12-30 12:09:18 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `user`
+ {executed in 16 msec}
+[2024-12-30 12:09:18 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `user` ( `user_id` bigint(20) NOT NULL AUTO_INCREMENT, `uid` varchar(30) NOT NULL, `upw` varchar(100) NOT NULL, `nick_name` varchar(30) DEFAULT NULL, `pic` varchar(50) DEFAULT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), `updated_at` datetime DEFAULT NULL ON UPDATE current_timestamp(), PRIMARY KEY (`user_id`), UNIQUE KEY `uid` (`uid`) )
+ {executed in 0 msec}
+[2024-12-30 12:09:18 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `user_follow` ( `from_user_id` bigint(20) NOT NULL, `to_user_id` bigint(20) NOT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), PRIMARY KEY (`from_user_id`,`to_user_id`), KEY `to_user_id` (`to_user_id`), CONSTRAINT `user_follow_ibfk_1` FOREIGN KEY (`from_user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE, CONSTRAINT `user_follow_ibfk_2` FOREIGN KEY (`to_user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE, CONSTRAINT `CONSTRAINT_1` CHECK (`from_user_id` <> `to_user_id`) )
+ {executed in 16 msec}
+[2024-12-30 12:09:18 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `feed` ( `feed_id` bigint(20) NOT NULL AUTO_INCREMENT, `writer_user_id` bigint(20) NOT NULL, `contents` varchar(1000) DEFAULT NULL, `location` varchar(30) DEFAULT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), `updated_at` datetime DEFAULT NULL ON UPDATE current_timestamp(), PRIMARY KEY (`feed_id`), KEY `FK_FEED_writer_user_id` (`writer_user_id`), CONSTRAINT `FK_FEED_writer_user_id` FOREIGN KEY (`writer_user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE )
+ {executed in 0 msec}
+[2024-12-30 12:09:18 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `feed_comment` ( `feed_comment_id` bigint(20) NOT NULL AUTO_INCREMENT, `feed_id` bigint(20) NOT NULL, `user_id` bigint(20) NOT NULL, `COMMENT` varchar(150) NOT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), `updated_at` datetime DEFAULT NULL ON UPDATE current_timestamp(), PRIMARY KEY (`feed_comment_id`), KEY `feed_id` (`feed_id`), KEY `user_id` (`user_id`), CONSTRAINT `feed_comment_ibfk_1` FOREIGN KEY (`feed_id`) REFERENCES `feed` (`feed_id`) ON DELETE CASCADE, CONSTRAINT `feed_comment_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE )
+ {executed in 15 msec}
+[2024-12-30 12:09:18 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `feed_like` ( `feed_id` bigint(20) NOT NULL, `user_id` bigint(20) NOT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), PRIMARY KEY (`feed_id`,`user_id`), KEY `user_id` (`user_id`), CONSTRAINT `feed_like_ibfk_1` FOREIGN KEY (`feed_id`) REFERENCES `feed` (`feed_id`) ON DELETE CASCADE, CONSTRAINT `feed_like_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE )
+ {executed in 16 msec}
+[2024-12-30 12:09:18 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `feed_pic` ( `feed_id` bigint(20) NOT NULL, `pic` varchar(50) NOT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), PRIMARY KEY (`feed_id`,`pic`), CONSTRAINT `feed_pic_ibfk_1` FOREIGN KEY (`feed_id`) REFERENCES `feed` (`feed_id`) ON DELETE CASCADE )
+ {executed in 1 msec}
+[2024-12-30 12:09:18 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. INSERT INTO `user` (`user_id`, `uid`, `upw`, `nick_name`, `pic`, `created_at`) VALUES (1, 'mic', '$2a$10$cVRpfytmEdzvs1I4oqqRXOWUleJHm6xKjOnHqA3EEJ5.Q0cAtbhte', '홍길동', NULL, '2024-11-01 10:10:01'), (2, 'jacob', '$2a$10$cVRpfytmEdzvs1I4oqqRXOWUleJHm6xKjOnHqA3EEJ5.Q0cAtbhte', '제이콥', NULL, '2024-11-01 10:10:02')
+ {executed in 0 msec}
+[2024-12-30 12:09:18 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. INSERT INTO `feed` (`feed_id`, `writer_user_id`, `contents`, `location`, `created_at`, `updated_at`) VALUES (1, 1, '1번 글', '1번 위치', '2024-11-01 10:10:01', NULL), (2, 2, '2번 글', '2번 위치', '2024-11-01 10:10:02', NULL), (3, 1, '3번 글', '3번 위치', '2024-11-01 10:10:03', NULL), (4, 2, '4번 글', '4번 위치', '2024-11-01 10:10:04', NULL), (5, 1, '5번 글', '5번 위치', '2024-11-01 10:10:05', NULL)
+ {executed in 0 msec}
+[2024-12-30 12:09:18 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. INSERT INTO `feed_like` (`feed_id`, `user_id`, `created_at`) VALUES (1, 2, '2024-11-01 10:10:01'), (2, 1, '2024-11-01 10:10:02'), (3, 2, '2024-11-01 10:10:03')
+ {executed in 15 msec}
+[2024-12-30 12:09:18 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. INSERT INTO `feed_comment` (`feed_comment_id`, `feed_id`, `user_id`, `COMMENT`, `created_at`) VALUES (1, 1, 1, '1번 댓글', '2024-11-01 10:10:01'), (2, 2, 2, '2번 댓글', '2024-11-01 10:10:02'), (3, 3, 1, '3번 댓글', '2024-11-01 10:10:03'), (4, 4, 2, '4번 댓글', '2024-11-01 10:10:04'), (5, 5, 1, '5번 댓글', '2024-11-01 10:10:05'), (6, 1, 2, '6번 댓글', '2024-11-01 10:10:06')
+ {executed in 0 msec}
+[2024-12-30 12:09:18 INFO Test worker] [com.green.greengramver6.feed.like.FeedLikeMapperTest] Started FeedLikeMapperTest in 1.093 seconds (process running for 1.963)
+[2024-12-30 12:09:18 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT * FROM feed_like
+ {executed in 0 msec}
+[2024-12-30 12:09:18 INFO Test worker] [jdbc.resultsettable] 
+|--------|--------|--------------------|
+|feed_id |user_id |created_at          |
+|--------|--------|--------------------|
+|1       |2       |2024-11-01 10:10:01 |
+|2       |1       |2024-11-01 10:10:02 |
+|3       |2       |2024-11-01 10:10:03 |
+|--------|--------|--------------------|
+
+[2024-12-30 12:09:18 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT * FROM feed_like WHERE feed_id = 1 AND user_id =2
+ {executed in 0 msec}
+[2024-12-30 12:09:18 INFO Test worker] [jdbc.resultsettable] 
+|--------|--------|--------------------|
+|feed_id |user_id |created_at          |
+|--------|--------|--------------------|
+|1       |2       |2024-11-01 10:10:01 |
+|--------|--------|--------------------|
+
+[2024-12-30 12:09:18 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. DELETE FROM feed_like
+         WHERE feed_id = 1
+           AND user_id = 2
+ {executed in 0 msec}
+[2024-12-30 12:09:18 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT * FROM feed_like WHERE feed_id = 1 AND user_id =2
+ {executed in 0 msec}
+[2024-12-30 12:09:18 INFO Test worker] [jdbc.resultsettable] 
+|--------|--------|-----------|
+|feed_id |user_id |created_at |
+|--------|--------|-----------|
+|--------|--------|-----------|
+
+[2024-12-30 12:09:18 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT * FROM feed_like
+ {executed in 0 msec}
+[2024-12-30 12:09:18 INFO Test worker] [jdbc.resultsettable] 
+|--------|--------|--------------------|
+|feed_id |user_id |created_at          |
+|--------|--------|--------------------|
+|2       |1       |2024-11-01 10:10:02 |
+|3       |2       |2024-11-01 10:10:03 |
+|--------|--------|--------------------|
+
+[2024-12-30 12:09:18 INFO SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[2024-12-30 12:09:18 INFO SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[2024-12-30 12:10:27 INFO background-preinit] [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 8.0.1.Final
+[2024-12-30 12:10:27 INFO Test worker] [com.green.greengramver6.feed.like.FeedLikeMapperTest] Starting FeedLikeMapperTest using Java 17.0.12 with PID 1812 (started by Administrator in D:\lej\greengramtdd)
+[2024-12-30 12:10:27 INFO Test worker] [com.green.greengramver6.feed.like.FeedLikeMapperTest] The following 1 profile is active: "test"
+[2024-12-30 12:10:27 INFO Test worker] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2024-12-30 12:10:27 INFO Test worker] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@79cb8ffa
+[2024-12-30 12:10:27 INFO Test worker] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2024-12-30 12:10:27 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE DATABASE IF NOT EXISTS `greengram_ver3_test`
+ {executed in 0 msec}
+[2024-12-30 12:10:27 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. USE `greengram_ver3_test`
+ {executed in 0 msec}
+[2024-12-30 12:10:27 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `feed_pic`
+ {executed in 0 msec}
+[2024-12-30 12:10:27 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `feed_like`
+ {executed in 16 msec}
+[2024-12-30 12:10:27 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `feed_comment`
+ {executed in 4 msec}
+[2024-12-30 12:10:27 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `feed`
+ {executed in 0 msec}
+[2024-12-30 12:10:28 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `user_follow`
+ {executed in 11 msec}
+[2024-12-30 12:10:28 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `user`
+ {executed in 0 msec}
+[2024-12-30 12:10:28 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `user` ( `user_id` bigint(20) NOT NULL AUTO_INCREMENT, `uid` varchar(30) NOT NULL, `upw` varchar(100) NOT NULL, `nick_name` varchar(30) DEFAULT NULL, `pic` varchar(50) DEFAULT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), `updated_at` datetime DEFAULT NULL ON UPDATE current_timestamp(), PRIMARY KEY (`user_id`), UNIQUE KEY `uid` (`uid`) )
+ {executed in 16 msec}
+[2024-12-30 12:10:28 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `user_follow` ( `from_user_id` bigint(20) NOT NULL, `to_user_id` bigint(20) NOT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), PRIMARY KEY (`from_user_id`,`to_user_id`), KEY `to_user_id` (`to_user_id`), CONSTRAINT `user_follow_ibfk_1` FOREIGN KEY (`from_user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE, CONSTRAINT `user_follow_ibfk_2` FOREIGN KEY (`to_user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE, CONSTRAINT `CONSTRAINT_1` CHECK (`from_user_id` <> `to_user_id`) )
+ {executed in 3 msec}
+[2024-12-30 12:10:28 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `feed` ( `feed_id` bigint(20) NOT NULL AUTO_INCREMENT, `writer_user_id` bigint(20) NOT NULL, `contents` varchar(1000) DEFAULT NULL, `location` varchar(30) DEFAULT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), `updated_at` datetime DEFAULT NULL ON UPDATE current_timestamp(), PRIMARY KEY (`feed_id`), KEY `FK_FEED_writer_user_id` (`writer_user_id`), CONSTRAINT `FK_FEED_writer_user_id` FOREIGN KEY (`writer_user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE )
+ {executed in 0 msec}
+[2024-12-30 12:10:28 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `feed_comment` ( `feed_comment_id` bigint(20) NOT NULL AUTO_INCREMENT, `feed_id` bigint(20) NOT NULL, `user_id` bigint(20) NOT NULL, `COMMENT` varchar(150) NOT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), `updated_at` datetime DEFAULT NULL ON UPDATE current_timestamp(), PRIMARY KEY (`feed_comment_id`), KEY `feed_id` (`feed_id`), KEY `user_id` (`user_id`), CONSTRAINT `feed_comment_ibfk_1` FOREIGN KEY (`feed_id`) REFERENCES `feed` (`feed_id`) ON DELETE CASCADE, CONSTRAINT `feed_comment_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE )
+ {executed in 16 msec}
+[2024-12-30 12:10:28 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `feed_like` ( `feed_id` bigint(20) NOT NULL, `user_id` bigint(20) NOT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), PRIMARY KEY (`feed_id`,`user_id`), KEY `user_id` (`user_id`), CONSTRAINT `feed_like_ibfk_1` FOREIGN KEY (`feed_id`) REFERENCES `feed` (`feed_id`) ON DELETE CASCADE, CONSTRAINT `feed_like_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE )
+ {executed in 15 msec}
+[2024-12-30 12:10:28 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `feed_pic` ( `feed_id` bigint(20) NOT NULL, `pic` varchar(50) NOT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), PRIMARY KEY (`feed_id`,`pic`), CONSTRAINT `feed_pic_ibfk_1` FOREIGN KEY (`feed_id`) REFERENCES `feed` (`feed_id`) ON DELETE CASCADE )
+ {executed in 0 msec}
+[2024-12-30 12:10:28 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. INSERT INTO `user` (`user_id`, `uid`, `upw`, `nick_name`, `pic`, `created_at`) VALUES (1, 'mic', '$2a$10$cVRpfytmEdzvs1I4oqqRXOWUleJHm6xKjOnHqA3EEJ5.Q0cAtbhte', '홍길동', NULL, '2024-11-01 10:10:01'), (2, 'jacob', '$2a$10$cVRpfytmEdzvs1I4oqqRXOWUleJHm6xKjOnHqA3EEJ5.Q0cAtbhte', '제이콥', NULL, '2024-11-01 10:10:02')
+ {executed in 0 msec}
+[2024-12-30 12:10:28 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. INSERT INTO `feed` (`feed_id`, `writer_user_id`, `contents`, `location`, `created_at`, `updated_at`) VALUES (1, 1, '1번 글', '1번 위치', '2024-11-01 10:10:01', NULL), (2, 2, '2번 글', '2번 위치', '2024-11-01 10:10:02', NULL), (3, 1, '3번 글', '3번 위치', '2024-11-01 10:10:03', NULL), (4, 2, '4번 글', '4번 위치', '2024-11-01 10:10:04', NULL), (5, 1, '5번 글', '5번 위치', '2024-11-01 10:10:05', NULL)
+ {executed in 16 msec}
+[2024-12-30 12:10:28 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. INSERT INTO `feed_like` (`feed_id`, `user_id`, `created_at`) VALUES (1, 2, '2024-11-01 10:10:01'), (2, 1, '2024-11-01 10:10:02'), (3, 2, '2024-11-01 10:10:03')
+ {executed in 0 msec}
+[2024-12-30 12:10:28 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. INSERT INTO `feed_comment` (`feed_comment_id`, `feed_id`, `user_id`, `COMMENT`, `created_at`) VALUES (1, 1, 1, '1번 댓글', '2024-11-01 10:10:01'), (2, 2, 2, '2번 댓글', '2024-11-01 10:10:02'), (3, 3, 1, '3번 댓글', '2024-11-01 10:10:03'), (4, 4, 2, '4번 댓글', '2024-11-01 10:10:04'), (5, 5, 1, '5번 댓글', '2024-11-01 10:10:05'), (6, 1, 2, '6번 댓글', '2024-11-01 10:10:06')
+ {executed in 0 msec}
+[2024-12-30 12:10:28 INFO Test worker] [com.green.greengramver6.feed.like.FeedLikeMapperTest] Started FeedLikeMapperTest in 1.117 seconds (process running for 1.975)
+[2024-12-30 12:10:28 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT * FROM feed_like
+ {executed in 0 msec}
+[2024-12-30 12:10:28 INFO Test worker] [jdbc.resultsettable] 
+|--------|--------|--------------------|
+|feed_id |user_id |created_at          |
+|--------|--------|--------------------|
+|1       |2       |2024-11-01 10:10:01 |
+|2       |1       |2024-11-01 10:10:02 |
+|3       |2       |2024-11-01 10:10:03 |
+|--------|--------|--------------------|
+
+[2024-12-30 12:10:28 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT * FROM feed_like WHERE feed_id = 1 AND user_id =2
+ {executed in 0 msec}
+[2024-12-30 12:10:28 INFO Test worker] [jdbc.resultsettable] 
+|--------|--------|--------------------|
+|feed_id |user_id |created_at          |
+|--------|--------|--------------------|
+|1       |2       |2024-11-01 10:10:01 |
+|--------|--------|--------------------|
+
+[2024-12-30 12:10:28 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. DELETE FROM feed_like
+         WHERE feed_id = 1
+           AND user_id = 2
+ {executed in 0 msec}
+[2024-12-30 12:10:28 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT * FROM feed_like
+ {executed in 0 msec}
+[2024-12-30 12:10:28 INFO Test worker] [jdbc.resultsettable] 
+|--------|--------|--------------------|
+|feed_id |user_id |created_at          |
+|--------|--------|--------------------|
+|2       |1       |2024-11-01 10:10:02 |
+|3       |2       |2024-11-01 10:10:03 |
+|--------|--------|--------------------|
+
+[2024-12-30 12:10:28 INFO SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[2024-12-30 12:10:28 INFO SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[2024-12-30 12:12:01 INFO background-preinit] [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 8.0.1.Final
+[2024-12-30 12:12:01 INFO Test worker] [com.green.greengramver6.feed.like.FeedLikeMapperTest] Starting FeedLikeMapperTest using Java 17.0.12 with PID 7972 (started by Administrator in D:\lej\greengramtdd)
+[2024-12-30 12:12:01 INFO Test worker] [com.green.greengramver6.feed.like.FeedLikeMapperTest] The following 1 profile is active: "test"
+[2024-12-30 12:12:02 INFO Test worker] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2024-12-30 12:12:02 INFO Test worker] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@1a2e563e
+[2024-12-30 12:12:02 INFO Test worker] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2024-12-30 12:12:02 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE DATABASE IF NOT EXISTS `greengram_ver3_test`
+ {executed in 0 msec}
+[2024-12-30 12:12:02 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. USE `greengram_ver3_test`
+ {executed in 0 msec}
+[2024-12-30 12:12:02 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `feed_pic`
+ {executed in 14 msec}
+[2024-12-30 12:12:02 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `feed_like`
+ {executed in 15 msec}
+[2024-12-30 12:12:02 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `feed_comment`
+ {executed in 0 msec}
+[2024-12-30 12:12:02 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `feed`
+ {executed in 0 msec}
+[2024-12-30 12:12:02 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `user_follow`
+ {executed in 15 msec}
+[2024-12-30 12:12:02 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `user`
+ {executed in 6 msec}
+[2024-12-30 12:12:02 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `user` ( `user_id` bigint(20) NOT NULL AUTO_INCREMENT, `uid` varchar(30) NOT NULL, `upw` varchar(100) NOT NULL, `nick_name` varchar(30) DEFAULT NULL, `pic` varchar(50) DEFAULT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), `updated_at` datetime DEFAULT NULL ON UPDATE current_timestamp(), PRIMARY KEY (`user_id`), UNIQUE KEY `uid` (`uid`) )
+ {executed in 0 msec}
+[2024-12-30 12:12:02 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `user_follow` ( `from_user_id` bigint(20) NOT NULL, `to_user_id` bigint(20) NOT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), PRIMARY KEY (`from_user_id`,`to_user_id`), KEY `to_user_id` (`to_user_id`), CONSTRAINT `user_follow_ibfk_1` FOREIGN KEY (`from_user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE, CONSTRAINT `user_follow_ibfk_2` FOREIGN KEY (`to_user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE, CONSTRAINT `CONSTRAINT_1` CHECK (`from_user_id` <> `to_user_id`) )
+ {executed in 16 msec}
+[2024-12-30 12:12:02 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `feed` ( `feed_id` bigint(20) NOT NULL AUTO_INCREMENT, `writer_user_id` bigint(20) NOT NULL, `contents` varchar(1000) DEFAULT NULL, `location` varchar(30) DEFAULT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), `updated_at` datetime DEFAULT NULL ON UPDATE current_timestamp(), PRIMARY KEY (`feed_id`), KEY `FK_FEED_writer_user_id` (`writer_user_id`), CONSTRAINT `FK_FEED_writer_user_id` FOREIGN KEY (`writer_user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE )
+ {executed in 0 msec}
+[2024-12-30 12:12:02 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `feed_comment` ( `feed_comment_id` bigint(20) NOT NULL AUTO_INCREMENT, `feed_id` bigint(20) NOT NULL, `user_id` bigint(20) NOT NULL, `COMMENT` varchar(150) NOT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), `updated_at` datetime DEFAULT NULL ON UPDATE current_timestamp(), PRIMARY KEY (`feed_comment_id`), KEY `feed_id` (`feed_id`), KEY `user_id` (`user_id`), CONSTRAINT `feed_comment_ibfk_1` FOREIGN KEY (`feed_id`) REFERENCES `feed` (`feed_id`) ON DELETE CASCADE, CONSTRAINT `feed_comment_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE )
+ {executed in 15 msec}
+[2024-12-30 12:12:02 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `feed_like` ( `feed_id` bigint(20) NOT NULL, `user_id` bigint(20) NOT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), PRIMARY KEY (`feed_id`,`user_id`), KEY `user_id` (`user_id`), CONSTRAINT `feed_like_ibfk_1` FOREIGN KEY (`feed_id`) REFERENCES `feed` (`feed_id`) ON DELETE CASCADE, CONSTRAINT `feed_like_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE )
+ {executed in 0 msec}
+[2024-12-30 12:12:02 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `feed_pic` ( `feed_id` bigint(20) NOT NULL, `pic` varchar(50) NOT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), PRIMARY KEY (`feed_id`,`pic`), CONSTRAINT `feed_pic_ibfk_1` FOREIGN KEY (`feed_id`) REFERENCES `feed` (`feed_id`) ON DELETE CASCADE )
+ {executed in 16 msec}
+[2024-12-30 12:12:02 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. INSERT INTO `user` (`user_id`, `uid`, `upw`, `nick_name`, `pic`, `created_at`) VALUES (1, 'mic', '$2a$10$cVRpfytmEdzvs1I4oqqRXOWUleJHm6xKjOnHqA3EEJ5.Q0cAtbhte', '홍길동', NULL, '2024-11-01 10:10:01'), (2, 'jacob', '$2a$10$cVRpfytmEdzvs1I4oqqRXOWUleJHm6xKjOnHqA3EEJ5.Q0cAtbhte', '제이콥', NULL, '2024-11-01 10:10:02')
+ {executed in 0 msec}
+[2024-12-30 12:12:02 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. INSERT INTO `feed` (`feed_id`, `writer_user_id`, `contents`, `location`, `created_at`, `updated_at`) VALUES (1, 1, '1번 글', '1번 위치', '2024-11-01 10:10:01', NULL), (2, 2, '2번 글', '2번 위치', '2024-11-01 10:10:02', NULL), (3, 1, '3번 글', '3번 위치', '2024-11-01 10:10:03', NULL), (4, 2, '4번 글', '4번 위치', '2024-11-01 10:10:04', NULL), (5, 1, '5번 글', '5번 위치', '2024-11-01 10:10:05', NULL)
+ {executed in 9 msec}
+[2024-12-30 12:12:02 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. INSERT INTO `feed_like` (`feed_id`, `user_id`, `created_at`) VALUES (1, 2, '2024-11-01 10:10:01'), (2, 1, '2024-11-01 10:10:02'), (3, 2, '2024-11-01 10:10:03')
+ {executed in 0 msec}
+[2024-12-30 12:12:02 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. INSERT INTO `feed_comment` (`feed_comment_id`, `feed_id`, `user_id`, `COMMENT`, `created_at`) VALUES (1, 1, 1, '1번 댓글', '2024-11-01 10:10:01'), (2, 2, 2, '2번 댓글', '2024-11-01 10:10:02'), (3, 3, 1, '3번 댓글', '2024-11-01 10:10:03'), (4, 4, 2, '4번 댓글', '2024-11-01 10:10:04'), (5, 5, 1, '5번 댓글', '2024-11-01 10:10:05'), (6, 1, 2, '6번 댓글', '2024-11-01 10:10:06')
+ {executed in 0 msec}
+[2024-12-30 12:12:02 INFO Test worker] [com.green.greengramver6.feed.like.FeedLikeMapperTest] Started FeedLikeMapperTest in 1.107 seconds (process running for 1.973)
+[2024-12-30 12:12:03 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT * FROM feed_like
+ {executed in 0 msec}
+[2024-12-30 12:12:03 INFO Test worker] [jdbc.resultsettable] 
+|--------|--------|--------------------|
+|feed_id |user_id |created_at          |
+|--------|--------|--------------------|
+|1       |2       |2024-11-01 10:10:01 |
+|2       |1       |2024-11-01 10:10:02 |
+|3       |2       |2024-11-01 10:10:03 |
+|--------|--------|--------------------|
+
+[2024-12-30 12:12:03 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT * FROM feed_like WHERE feed_id = 1 AND user_id =2
+ {executed in 0 msec}
+[2024-12-30 12:12:03 INFO Test worker] [jdbc.resultsettable] 
+|--------|--------|--------------------|
+|feed_id |user_id |created_at          |
+|--------|--------|--------------------|
+|1       |2       |2024-11-01 10:10:01 |
+|--------|--------|--------------------|
+
+[2024-12-30 12:12:03 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. DELETE FROM feed_like
+         WHERE feed_id = 1
+           AND user_id = 2
+ {executed in 0 msec}
+[2024-12-30 12:12:03 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT * FROM feed_like
+ {executed in 0 msec}
+[2024-12-30 12:12:03 INFO Test worker] [jdbc.resultsettable] 
+|--------|--------|--------------------|
+|feed_id |user_id |created_at          |
+|--------|--------|--------------------|
+|2       |1       |2024-11-01 10:10:02 |
+|3       |2       |2024-11-01 10:10:03 |
+|--------|--------|--------------------|
+
+[2024-12-30 12:12:03 INFO SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[2024-12-30 12:12:03 INFO SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[2024-12-30 12:12:29 INFO background-preinit] [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 8.0.1.Final
+[2024-12-30 12:12:29 INFO Test worker] [com.green.greengramver6.feed.like.FeedLikeMapperTest] Starting FeedLikeMapperTest using Java 17.0.12 with PID 1116 (started by Administrator in D:\lej\greengramtdd)
+[2024-12-30 12:12:29 INFO Test worker] [com.green.greengramver6.feed.like.FeedLikeMapperTest] The following 1 profile is active: "test"
+[2024-12-30 12:12:30 INFO Test worker] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2024-12-30 12:12:30 INFO Test worker] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@62ea8931
+[2024-12-30 12:12:30 INFO Test worker] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2024-12-30 12:12:30 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE DATABASE IF NOT EXISTS `greengram_ver3_test`
+ {executed in 0 msec}
+[2024-12-30 12:12:30 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. USE `greengram_ver3_test`
+ {executed in 0 msec}
+[2024-12-30 12:12:30 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `feed_pic`
+ {executed in 0 msec}
+[2024-12-30 12:12:30 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `feed_like`
+ {executed in 16 msec}
+[2024-12-30 12:12:30 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `feed_comment`
+ {executed in 0 msec}
+[2024-12-30 12:12:30 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `feed`
+ {executed in 0 msec}
+[2024-12-30 12:12:30 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `user_follow`
+ {executed in 15 msec}
+[2024-12-30 12:12:30 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `user`
+ {executed in 0 msec}
+[2024-12-30 12:12:30 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `user` ( `user_id` bigint(20) NOT NULL AUTO_INCREMENT, `uid` varchar(30) NOT NULL, `upw` varchar(100) NOT NULL, `nick_name` varchar(30) DEFAULT NULL, `pic` varchar(50) DEFAULT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), `updated_at` datetime DEFAULT NULL ON UPDATE current_timestamp(), PRIMARY KEY (`user_id`), UNIQUE KEY `uid` (`uid`) )
+ {executed in 16 msec}
+[2024-12-30 12:12:30 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `user_follow` ( `from_user_id` bigint(20) NOT NULL, `to_user_id` bigint(20) NOT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), PRIMARY KEY (`from_user_id`,`to_user_id`), KEY `to_user_id` (`to_user_id`), CONSTRAINT `user_follow_ibfk_1` FOREIGN KEY (`from_user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE, CONSTRAINT `user_follow_ibfk_2` FOREIGN KEY (`to_user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE, CONSTRAINT `CONSTRAINT_1` CHECK (`from_user_id` <> `to_user_id`) )
+ {executed in 0 msec}
+[2024-12-30 12:12:30 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `feed` ( `feed_id` bigint(20) NOT NULL AUTO_INCREMENT, `writer_user_id` bigint(20) NOT NULL, `contents` varchar(1000) DEFAULT NULL, `location` varchar(30) DEFAULT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), `updated_at` datetime DEFAULT NULL ON UPDATE current_timestamp(), PRIMARY KEY (`feed_id`), KEY `FK_FEED_writer_user_id` (`writer_user_id`), CONSTRAINT `FK_FEED_writer_user_id` FOREIGN KEY (`writer_user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE )
+ {executed in 0 msec}
+[2024-12-30 12:12:30 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `feed_comment` ( `feed_comment_id` bigint(20) NOT NULL AUTO_INCREMENT, `feed_id` bigint(20) NOT NULL, `user_id` bigint(20) NOT NULL, `COMMENT` varchar(150) NOT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), `updated_at` datetime DEFAULT NULL ON UPDATE current_timestamp(), PRIMARY KEY (`feed_comment_id`), KEY `feed_id` (`feed_id`), KEY `user_id` (`user_id`), CONSTRAINT `feed_comment_ibfk_1` FOREIGN KEY (`feed_id`) REFERENCES `feed` (`feed_id`) ON DELETE CASCADE, CONSTRAINT `feed_comment_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE )
+ {executed in 16 msec}
+[2024-12-30 12:12:30 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `feed_like` ( `feed_id` bigint(20) NOT NULL, `user_id` bigint(20) NOT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), PRIMARY KEY (`feed_id`,`user_id`), KEY `user_id` (`user_id`), CONSTRAINT `feed_like_ibfk_1` FOREIGN KEY (`feed_id`) REFERENCES `feed` (`feed_id`) ON DELETE CASCADE, CONSTRAINT `feed_like_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE )
+ {executed in 0 msec}
+[2024-12-30 12:12:30 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `feed_pic` ( `feed_id` bigint(20) NOT NULL, `pic` varchar(50) NOT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), PRIMARY KEY (`feed_id`,`pic`), CONSTRAINT `feed_pic_ibfk_1` FOREIGN KEY (`feed_id`) REFERENCES `feed` (`feed_id`) ON DELETE CASCADE )
+ {executed in 15 msec}
+[2024-12-30 12:12:30 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. INSERT INTO `user` (`user_id`, `uid`, `upw`, `nick_name`, `pic`, `created_at`) VALUES (1, 'mic', '$2a$10$cVRpfytmEdzvs1I4oqqRXOWUleJHm6xKjOnHqA3EEJ5.Q0cAtbhte', '홍길동', NULL, '2024-11-01 10:10:01'), (2, 'jacob', '$2a$10$cVRpfytmEdzvs1I4oqqRXOWUleJHm6xKjOnHqA3EEJ5.Q0cAtbhte', '제이콥', NULL, '2024-11-01 10:10:02')
+ {executed in 0 msec}
+[2024-12-30 12:12:30 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. INSERT INTO `feed` (`feed_id`, `writer_user_id`, `contents`, `location`, `created_at`, `updated_at`) VALUES (1, 1, '1번 글', '1번 위치', '2024-11-01 10:10:01', NULL), (2, 2, '2번 글', '2번 위치', '2024-11-01 10:10:02', NULL), (3, 1, '3번 글', '3번 위치', '2024-11-01 10:10:03', NULL), (4, 2, '4번 글', '4번 위치', '2024-11-01 10:10:04', NULL), (5, 1, '5번 글', '5번 위치', '2024-11-01 10:10:05', NULL)
+ {executed in 14 msec}
+[2024-12-30 12:12:30 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. INSERT INTO `feed_like` (`feed_id`, `user_id`, `created_at`) VALUES (1, 2, '2024-11-01 10:10:01'), (2, 1, '2024-11-01 10:10:02'), (3, 2, '2024-11-01 10:10:03')
+ {executed in 0 msec}
+[2024-12-30 12:12:30 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. INSERT INTO `feed_comment` (`feed_comment_id`, `feed_id`, `user_id`, `COMMENT`, `created_at`) VALUES (1, 1, 1, '1번 댓글', '2024-11-01 10:10:01'), (2, 2, 2, '2번 댓글', '2024-11-01 10:10:02'), (3, 3, 1, '3번 댓글', '2024-11-01 10:10:03'), (4, 4, 2, '4번 댓글', '2024-11-01 10:10:04'), (5, 5, 1, '5번 댓글', '2024-11-01 10:10:05'), (6, 1, 2, '6번 댓글', '2024-11-01 10:10:06')
+ {executed in 5 msec}
+[2024-12-30 12:12:30 INFO Test worker] [com.green.greengramver6.feed.like.FeedLikeMapperTest] Started FeedLikeMapperTest in 1.091 seconds (process running for 1.96)
+[2024-12-30 12:12:31 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT * FROM feed_like
+ {executed in 0 msec}
+[2024-12-30 12:12:31 INFO Test worker] [jdbc.resultsettable] 
+|--------|--------|--------------------|
+|feed_id |user_id |created_at          |
+|--------|--------|--------------------|
+|1       |2       |2024-11-01 10:10:01 |
+|2       |1       |2024-11-01 10:10:02 |
+|3       |2       |2024-11-01 10:10:03 |
+|--------|--------|--------------------|
+
+[2024-12-30 12:12:31 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT * FROM feed_like WHERE feed_id = 1 AND user_id =2
+ {executed in 0 msec}
+[2024-12-30 12:12:31 INFO Test worker] [jdbc.resultsettable] 
+|--------|--------|--------------------|
+|feed_id |user_id |created_at          |
+|--------|--------|--------------------|
+|1       |2       |2024-11-01 10:10:01 |
+|--------|--------|--------------------|
+
+[2024-12-30 12:12:31 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. DELETE FROM feed_like
+         WHERE feed_id = 1
+           AND user_id = 2
+ {executed in 0 msec}
+[2024-12-30 12:12:31 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT * FROM feed_like
+ {executed in 0 msec}
+[2024-12-30 12:12:31 INFO Test worker] [jdbc.resultsettable] 
+|--------|--------|--------------------|
+|feed_id |user_id |created_at          |
+|--------|--------|--------------------|
+|2       |1       |2024-11-01 10:10:02 |
+|3       |2       |2024-11-01 10:10:03 |
+|--------|--------|--------------------|
+
+[2024-12-30 12:12:31 INFO SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[2024-12-30 12:12:31 INFO SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[2024-12-30 12:14:44 INFO background-preinit] [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 8.0.1.Final
+[2024-12-30 12:14:44 INFO Test worker] [com.green.greengramver6.feed.like.FeedLikeMapperTest] Starting FeedLikeMapperTest using Java 17.0.12 with PID 5584 (started by Administrator in D:\lej\greengramtdd)
+[2024-12-30 12:14:44 INFO Test worker] [com.green.greengramver6.feed.like.FeedLikeMapperTest] The following 1 profile is active: "test"
+[2024-12-30 12:14:44 INFO Test worker] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2024-12-30 12:14:44 INFO Test worker] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@10ed037a
+[2024-12-30 12:14:44 INFO Test worker] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2024-12-30 12:14:44 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE DATABASE IF NOT EXISTS `greengram_ver3_test`
+ {executed in 0 msec}
+[2024-12-30 12:14:44 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. USE `greengram_ver3_test`
+ {executed in 0 msec}
+[2024-12-30 12:14:44 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `feed_pic`
+ {executed in 0 msec}
+[2024-12-30 12:14:44 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `feed_like`
+ {executed in 0 msec}
+[2024-12-30 12:14:44 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `feed_comment`
+ {executed in 16 msec}
+[2024-12-30 12:14:44 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `feed`
+ {executed in 3 msec}
+[2024-12-30 12:14:44 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `user_follow`
+ {executed in 6 msec}
+[2024-12-30 12:14:44 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `user`
+ {executed in 0 msec}
+[2024-12-30 12:14:44 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `user` ( `user_id` bigint(20) NOT NULL AUTO_INCREMENT, `uid` varchar(30) NOT NULL, `upw` varchar(100) NOT NULL, `nick_name` varchar(30) DEFAULT NULL, `pic` varchar(50) DEFAULT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), `updated_at` datetime DEFAULT NULL ON UPDATE current_timestamp(), PRIMARY KEY (`user_id`), UNIQUE KEY `uid` (`uid`) )
+ {executed in 15 msec}
+[2024-12-30 12:14:44 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `user_follow` ( `from_user_id` bigint(20) NOT NULL, `to_user_id` bigint(20) NOT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), PRIMARY KEY (`from_user_id`,`to_user_id`), KEY `to_user_id` (`to_user_id`), CONSTRAINT `user_follow_ibfk_1` FOREIGN KEY (`from_user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE, CONSTRAINT `user_follow_ibfk_2` FOREIGN KEY (`to_user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE, CONSTRAINT `CONSTRAINT_1` CHECK (`from_user_id` <> `to_user_id`) )
+ {executed in 0 msec}
+[2024-12-30 12:14:44 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `feed` ( `feed_id` bigint(20) NOT NULL AUTO_INCREMENT, `writer_user_id` bigint(20) NOT NULL, `contents` varchar(1000) DEFAULT NULL, `location` varchar(30) DEFAULT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), `updated_at` datetime DEFAULT NULL ON UPDATE current_timestamp(), PRIMARY KEY (`feed_id`), KEY `FK_FEED_writer_user_id` (`writer_user_id`), CONSTRAINT `FK_FEED_writer_user_id` FOREIGN KEY (`writer_user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE )
+ {executed in 16 msec}
+[2024-12-30 12:14:44 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `feed_comment` ( `feed_comment_id` bigint(20) NOT NULL AUTO_INCREMENT, `feed_id` bigint(20) NOT NULL, `user_id` bigint(20) NOT NULL, `COMMENT` varchar(150) NOT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), `updated_at` datetime DEFAULT NULL ON UPDATE current_timestamp(), PRIMARY KEY (`feed_comment_id`), KEY `feed_id` (`feed_id`), KEY `user_id` (`user_id`), CONSTRAINT `feed_comment_ibfk_1` FOREIGN KEY (`feed_id`) REFERENCES `feed` (`feed_id`) ON DELETE CASCADE, CONSTRAINT `feed_comment_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE )
+ {executed in 0 msec}
+[2024-12-30 12:14:44 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `feed_like` ( `feed_id` bigint(20) NOT NULL, `user_id` bigint(20) NOT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), PRIMARY KEY (`feed_id`,`user_id`), KEY `user_id` (`user_id`), CONSTRAINT `feed_like_ibfk_1` FOREIGN KEY (`feed_id`) REFERENCES `feed` (`feed_id`) ON DELETE CASCADE, CONSTRAINT `feed_like_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE )
+ {executed in 15 msec}
+[2024-12-30 12:14:44 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `feed_pic` ( `feed_id` bigint(20) NOT NULL, `pic` varchar(50) NOT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), PRIMARY KEY (`feed_id`,`pic`), CONSTRAINT `feed_pic_ibfk_1` FOREIGN KEY (`feed_id`) REFERENCES `feed` (`feed_id`) ON DELETE CASCADE )
+ {executed in 0 msec}
+[2024-12-30 12:14:44 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. INSERT INTO `user` (`user_id`, `uid`, `upw`, `nick_name`, `pic`, `created_at`) VALUES (1, 'mic', '$2a$10$cVRpfytmEdzvs1I4oqqRXOWUleJHm6xKjOnHqA3EEJ5.Q0cAtbhte', '홍길동', NULL, '2024-11-01 10:10:01'), (2, 'jacob', '$2a$10$cVRpfytmEdzvs1I4oqqRXOWUleJHm6xKjOnHqA3EEJ5.Q0cAtbhte', '제이콥', NULL, '2024-11-01 10:10:02')
+ {executed in 0 msec}
+[2024-12-30 12:14:44 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. INSERT INTO `feed` (`feed_id`, `writer_user_id`, `contents`, `location`, `created_at`, `updated_at`) VALUES (1, 1, '1번 글', '1번 위치', '2024-11-01 10:10:01', NULL), (2, 2, '2번 글', '2번 위치', '2024-11-01 10:10:02', NULL), (3, 1, '3번 글', '3번 위치', '2024-11-01 10:10:03', NULL), (4, 2, '4번 글', '4번 위치', '2024-11-01 10:10:04', NULL), (5, 1, '5번 글', '5번 위치', '2024-11-01 10:10:05', NULL)
+ {executed in 6 msec}
+[2024-12-30 12:14:44 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. INSERT INTO `feed_like` (`feed_id`, `user_id`, `created_at`) VALUES (1, 2, '2024-11-01 10:10:01'), (2, 1, '2024-11-01 10:10:02'), (3, 2, '2024-11-01 10:10:03')
+ {executed in 0 msec}
+[2024-12-30 12:14:44 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. INSERT INTO `feed_comment` (`feed_comment_id`, `feed_id`, `user_id`, `COMMENT`, `created_at`) VALUES (1, 1, 1, '1번 댓글', '2024-11-01 10:10:01'), (2, 2, 2, '2번 댓글', '2024-11-01 10:10:02'), (3, 3, 1, '3번 댓글', '2024-11-01 10:10:03'), (4, 4, 2, '4번 댓글', '2024-11-01 10:10:04'), (5, 5, 1, '5번 댓글', '2024-11-01 10:10:05'), (6, 1, 2, '6번 댓글', '2024-11-01 10:10:06')
+ {executed in 0 msec}
+[2024-12-30 12:14:45 INFO Test worker] [com.green.greengramver6.feed.like.FeedLikeMapperTest] Started FeedLikeMapperTest in 1.113 seconds (process running for 1.988)
+[2024-12-30 12:14:45 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT * FROM feed_like
+ {executed in 0 msec}
+[2024-12-30 12:14:45 INFO Test worker] [jdbc.resultsettable] 
+|--------|--------|--------------------|
+|feed_id |user_id |created_at          |
+|--------|--------|--------------------|
+|1       |2       |2024-11-01 10:10:01 |
+|2       |1       |2024-11-01 10:10:02 |
+|3       |2       |2024-11-01 10:10:03 |
+|--------|--------|--------------------|
+
+[2024-12-30 12:14:45 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT * FROM feed_like WHERE feed_id = 1 AND user_id =2
+ {executed in 0 msec}
+[2024-12-30 12:14:45 INFO Test worker] [jdbc.resultsettable] 
+|--------|--------|--------------------|
+|feed_id |user_id |created_at          |
+|--------|--------|--------------------|
+|1       |2       |2024-11-01 10:10:01 |
+|--------|--------|--------------------|
+
+[2024-12-30 12:14:45 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. DELETE FROM feed_like
+         WHERE feed_id = 1
+           AND user_id = 2
+ {executed in 0 msec}
+[2024-12-30 12:14:45 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT * FROM feed_like WHERE feed_id = 1 AND user_id =2
+ {executed in 0 msec}
+[2024-12-30 12:14:45 INFO Test worker] [jdbc.resultsettable] 
+|--------|--------|-----------|
+|feed_id |user_id |created_at |
+|--------|--------|-----------|
+|--------|--------|-----------|
+
+[2024-12-30 12:14:45 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT * FROM feed_like
+ {executed in 0 msec}
+[2024-12-30 12:14:45 INFO Test worker] [jdbc.resultsettable] 
+|--------|--------|--------------------|
+|feed_id |user_id |created_at          |
+|--------|--------|--------------------|
+|2       |1       |2024-11-01 10:10:02 |
+|3       |2       |2024-11-01 10:10:03 |
+|--------|--------|--------------------|
+
+[2024-12-30 12:14:45 INFO SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[2024-12-30 12:14:45 INFO SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[2024-12-30 12:38:04 INFO background-preinit] [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 8.0.1.Final
+[2024-12-30 12:38:04 INFO Test worker] [com.green.greengramver6.feed.like.FeedLikeMapperTest] Starting FeedLikeMapperTest using Java 17.0.12 with PID 5452 (started by Administrator in D:\lej\greengramtdd)
+[2024-12-30 12:38:04 INFO Test worker] [com.green.greengramver6.feed.like.FeedLikeMapperTest] The following 1 profile is active: "test"
+[2024-12-30 12:38:04 INFO Test worker] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2024-12-30 12:38:04 INFO Test worker] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@1a2e563e
+[2024-12-30 12:38:04 INFO Test worker] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2024-12-30 12:38:04 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE DATABASE IF NOT EXISTS `greengram_ver3_test`
+ {executed in 0 msec}
+[2024-12-30 12:38:04 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. USE `greengram_ver3_test`
+ {executed in 0 msec}
+[2024-12-30 12:38:04 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `feed_pic`
+ {executed in 0 msec}
+[2024-12-30 12:38:04 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `feed_like`
+ {executed in 16 msec}
+[2024-12-30 12:38:04 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `feed_comment`
+ {executed in 0 msec}
+[2024-12-30 12:38:04 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `feed`
+ {executed in 15 msec}
+[2024-12-30 12:38:04 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `user_follow`
+ {executed in 0 msec}
+[2024-12-30 12:38:04 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `user`
+ {executed in 0 msec}
+[2024-12-30 12:38:04 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `user` ( `user_id` bigint(20) NOT NULL AUTO_INCREMENT, `uid` varchar(30) NOT NULL, `upw` varchar(100) NOT NULL, `nick_name` varchar(30) DEFAULT NULL, `pic` varchar(50) DEFAULT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), `updated_at` datetime DEFAULT NULL ON UPDATE current_timestamp(), PRIMARY KEY (`user_id`), UNIQUE KEY `uid` (`uid`) )
+ {executed in 16 msec}
+[2024-12-30 12:38:04 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `user_follow` ( `from_user_id` bigint(20) NOT NULL, `to_user_id` bigint(20) NOT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), PRIMARY KEY (`from_user_id`,`to_user_id`), KEY `to_user_id` (`to_user_id`), CONSTRAINT `user_follow_ibfk_1` FOREIGN KEY (`from_user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE, CONSTRAINT `user_follow_ibfk_2` FOREIGN KEY (`to_user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE, CONSTRAINT `CONSTRAINT_1` CHECK (`from_user_id` <> `to_user_id`) )
+ {executed in 0 msec}
+[2024-12-30 12:38:05 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `feed` ( `feed_id` bigint(20) NOT NULL AUTO_INCREMENT, `writer_user_id` bigint(20) NOT NULL, `contents` varchar(1000) DEFAULT NULL, `location` varchar(30) DEFAULT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), `updated_at` datetime DEFAULT NULL ON UPDATE current_timestamp(), PRIMARY KEY (`feed_id`), KEY `FK_FEED_writer_user_id` (`writer_user_id`), CONSTRAINT `FK_FEED_writer_user_id` FOREIGN KEY (`writer_user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE )
+ {executed in 16 msec}
+[2024-12-30 12:38:05 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `feed_comment` ( `feed_comment_id` bigint(20) NOT NULL AUTO_INCREMENT, `feed_id` bigint(20) NOT NULL, `user_id` bigint(20) NOT NULL, `COMMENT` varchar(150) NOT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), `updated_at` datetime DEFAULT NULL ON UPDATE current_timestamp(), PRIMARY KEY (`feed_comment_id`), KEY `feed_id` (`feed_id`), KEY `user_id` (`user_id`), CONSTRAINT `feed_comment_ibfk_1` FOREIGN KEY (`feed_id`) REFERENCES `feed` (`feed_id`) ON DELETE CASCADE, CONSTRAINT `feed_comment_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE )
+ {executed in 0 msec}
+[2024-12-30 12:38:05 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `feed_like` ( `feed_id` bigint(20) NOT NULL, `user_id` bigint(20) NOT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), PRIMARY KEY (`feed_id`,`user_id`), KEY `user_id` (`user_id`), CONSTRAINT `feed_like_ibfk_1` FOREIGN KEY (`feed_id`) REFERENCES `feed` (`feed_id`) ON DELETE CASCADE, CONSTRAINT `feed_like_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE )
+ {executed in 15 msec}
+[2024-12-30 12:38:05 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `feed_pic` ( `feed_id` bigint(20) NOT NULL, `pic` varchar(50) NOT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), PRIMARY KEY (`feed_id`,`pic`), CONSTRAINT `feed_pic_ibfk_1` FOREIGN KEY (`feed_id`) REFERENCES `feed` (`feed_id`) ON DELETE CASCADE )
+ {executed in 0 msec}
+[2024-12-30 12:38:05 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. INSERT INTO `user` (`user_id`, `uid`, `upw`, `nick_name`, `pic`, `created_at`) VALUES (1, 'mic', '$2a$10$cVRpfytmEdzvs1I4oqqRXOWUleJHm6xKjOnHqA3EEJ5.Q0cAtbhte', '홍길동', NULL, '2024-11-01 10:10:01'), (2, 'jacob', '$2a$10$cVRpfytmEdzvs1I4oqqRXOWUleJHm6xKjOnHqA3EEJ5.Q0cAtbhte', '제이콥', NULL, '2024-11-01 10:10:02')
+ {executed in 0 msec}
+[2024-12-30 12:38:05 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. INSERT INTO `feed` (`feed_id`, `writer_user_id`, `contents`, `location`, `created_at`, `updated_at`) VALUES (1, 1, '1번 글', '1번 위치', '2024-11-01 10:10:01', NULL), (2, 2, '2번 글', '2번 위치', '2024-11-01 10:10:02', NULL), (3, 1, '3번 글', '3번 위치', '2024-11-01 10:10:03', NULL), (4, 2, '4번 글', '4번 위치', '2024-11-01 10:10:04', NULL), (5, 1, '5번 글', '5번 위치', '2024-11-01 10:10:05', NULL)
+ {executed in 16 msec}
+[2024-12-30 12:38:05 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. INSERT INTO `feed_like` (`feed_id`, `user_id`, `created_at`) VALUES (1, 2, '2024-11-01 10:10:01'), (2, 1, '2024-11-01 10:10:02'), (3, 2, '2024-11-01 10:10:03')
+ {executed in 0 msec}
+[2024-12-30 12:38:05 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. INSERT INTO `feed_comment` (`feed_comment_id`, `feed_id`, `user_id`, `COMMENT`, `created_at`) VALUES (1, 1, 1, '1번 댓글', '2024-11-01 10:10:01'), (2, 2, 2, '2번 댓글', '2024-11-01 10:10:02'), (3, 3, 1, '3번 댓글', '2024-11-01 10:10:03'), (4, 4, 2, '4번 댓글', '2024-11-01 10:10:04'), (5, 5, 1, '5번 댓글', '2024-11-01 10:10:05'), (6, 1, 2, '6번 댓글', '2024-11-01 10:10:06')
+ {executed in 0 msec}
+[2024-12-30 12:38:05 INFO Test worker] [com.green.greengramver6.feed.like.FeedLikeMapperTest] Started FeedLikeMapperTest in 1.163 seconds (process running for 2.051)
+[2024-12-30 12:38:05 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT * FROM feed_like WHERE feed_id = 1 AND user_id =2
+ {executed in 0 msec}
+[2024-12-30 12:38:05 INFO Test worker] [jdbc.resultsettable] 
+|--------|--------|--------------------|
+|feed_id |user_id |created_at          |
+|--------|--------|--------------------|
+|1       |2       |2024-11-01 10:10:01 |
+|--------|--------|--------------------|
+
+[2024-12-30 12:38:05 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. DELETE FROM feed_like
+         WHERE feed_id = 1
+           AND user_id = 2
+ {executed in 0 msec}
+[2024-12-30 12:38:05 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT * FROM feed_like WHERE feed_id = 1 AND user_id =2
+ {executed in 0 msec}
+[2024-12-30 12:38:05 INFO Test worker] [jdbc.resultsettable] 
+|--------|--------|-----------|
+|feed_id |user_id |created_at |
+|--------|--------|-----------|
+|--------|--------|-----------|
+
+[2024-12-30 12:38:05 INFO SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[2024-12-30 12:38:05 INFO SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[2024-12-30 13:03:02 INFO background-preinit] [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 8.0.1.Final
+[2024-12-30 13:03:02 INFO Test worker] [com.green.greengramver6.feed.FeedPicMapperTest] Starting FeedPicMapperTest using Java 17.0.12 with PID 7408 (started by Administrator in D:\lej\greengramtdd)
+[2024-12-30 13:03:02 INFO Test worker] [com.green.greengramver6.feed.FeedPicMapperTest] The following 1 profile is active: "test"
+[2024-12-30 13:03:03 INFO Test worker] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2024-12-30 13:03:03 INFO Test worker] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@621f23ac
+[2024-12-30 13:03:03 INFO Test worker] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2024-12-30 13:03:03 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE DATABASE IF NOT EXISTS `greengram_ver3_test`
+ {executed in 0 msec}
+[2024-12-30 13:03:03 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. USE `greengram_ver3_test`
+ {executed in 0 msec}
+[2024-12-30 13:03:03 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `feed_pic`
+ {executed in 16 msec}
+[2024-12-30 13:03:03 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `feed_like`
+ {executed in 0 msec}
+[2024-12-30 13:03:03 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `feed_comment`
+ {executed in 0 msec}
+[2024-12-30 13:03:03 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `feed`
+ {executed in 15 msec}
+[2024-12-30 13:03:03 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `user_follow`
+ {executed in 0 msec}
+[2024-12-30 13:03:03 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `user`
+ {executed in 0 msec}
+[2024-12-30 13:03:03 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `user` ( `user_id` bigint(20) NOT NULL AUTO_INCREMENT, `uid` varchar(30) NOT NULL, `upw` varchar(100) NOT NULL, `nick_name` varchar(30) DEFAULT NULL, `pic` varchar(50) DEFAULT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), `updated_at` datetime DEFAULT NULL ON UPDATE current_timestamp(), PRIMARY KEY (`user_id`), UNIQUE KEY `uid` (`uid`) )
+ {executed in 0 msec}
+[2024-12-30 13:03:03 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `user_follow` ( `from_user_id` bigint(20) NOT NULL, `to_user_id` bigint(20) NOT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), PRIMARY KEY (`from_user_id`,`to_user_id`), KEY `to_user_id` (`to_user_id`), CONSTRAINT `user_follow_ibfk_1` FOREIGN KEY (`from_user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE, CONSTRAINT `user_follow_ibfk_2` FOREIGN KEY (`to_user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE, CONSTRAINT `CONSTRAINT_1` CHECK (`from_user_id` <> `to_user_id`) )
+ {executed in 0 msec}
+[2024-12-30 13:03:03 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `feed` ( `feed_id` bigint(20) NOT NULL AUTO_INCREMENT, `writer_user_id` bigint(20) NOT NULL, `contents` varchar(1000) DEFAULT NULL, `location` varchar(30) DEFAULT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), `updated_at` datetime DEFAULT NULL ON UPDATE current_timestamp(), PRIMARY KEY (`feed_id`), KEY `FK_FEED_writer_user_id` (`writer_user_id`), CONSTRAINT `FK_FEED_writer_user_id` FOREIGN KEY (`writer_user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE )
+ {executed in 16 msec}
+[2024-12-30 13:03:03 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `feed_comment` ( `feed_comment_id` bigint(20) NOT NULL AUTO_INCREMENT, `feed_id` bigint(20) NOT NULL, `user_id` bigint(20) NOT NULL, `COMMENT` varchar(150) NOT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), `updated_at` datetime DEFAULT NULL ON UPDATE current_timestamp(), PRIMARY KEY (`feed_comment_id`), KEY `feed_id` (`feed_id`), KEY `user_id` (`user_id`), CONSTRAINT `feed_comment_ibfk_1` FOREIGN KEY (`feed_id`) REFERENCES `feed` (`feed_id`) ON DELETE CASCADE, CONSTRAINT `feed_comment_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE )
+ {executed in 0 msec}
+[2024-12-30 13:03:03 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `feed_like` ( `feed_id` bigint(20) NOT NULL, `user_id` bigint(20) NOT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), PRIMARY KEY (`feed_id`,`user_id`), KEY `user_id` (`user_id`), CONSTRAINT `feed_like_ibfk_1` FOREIGN KEY (`feed_id`) REFERENCES `feed` (`feed_id`) ON DELETE CASCADE, CONSTRAINT `feed_like_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE )
+ {executed in 0 msec}
+[2024-12-30 13:03:03 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `feed_pic` ( `feed_id` bigint(20) NOT NULL, `pic` varchar(50) NOT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), PRIMARY KEY (`feed_id`,`pic`), CONSTRAINT `feed_pic_ibfk_1` FOREIGN KEY (`feed_id`) REFERENCES `feed` (`feed_id`) ON DELETE CASCADE )
+ {executed in 0 msec}
+[2024-12-30 13:03:03 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. INSERT INTO `user` (`user_id`, `uid`, `upw`, `nick_name`, `pic`, `created_at`) VALUES (1, 'mic', '$2a$10$cVRpfytmEdzvs1I4oqqRXOWUleJHm6xKjOnHqA3EEJ5.Q0cAtbhte', '홍길동', NULL, '2024-11-01 10:10:01'), (2, 'jacob', '$2a$10$cVRpfytmEdzvs1I4oqqRXOWUleJHm6xKjOnHqA3EEJ5.Q0cAtbhte', '제이콥', NULL, '2024-11-01 10:10:02')
+ {executed in 0 msec}
+[2024-12-30 13:03:03 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. INSERT INTO `feed` (`feed_id`, `writer_user_id`, `contents`, `location`, `created_at`, `updated_at`) VALUES (1, 1, '1번 글', '1번 위치', '2024-11-01 10:10:01', NULL), (2, 2, '2번 글', '2번 위치', '2024-11-01 10:10:02', NULL), (3, 1, '3번 글', '3번 위치', '2024-11-01 10:10:03', NULL), (4, 2, '4번 글', '4번 위치', '2024-11-01 10:10:04', NULL), (5, 1, '5번 글', '5번 위치', '2024-11-01 10:10:05', NULL)
+ {executed in 0 msec}
+[2024-12-30 13:03:03 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. INSERT INTO `feed_like` (`feed_id`, `user_id`, `created_at`) VALUES (1, 2, '2024-11-01 10:10:01'), (2, 1, '2024-11-01 10:10:02'), (3, 2, '2024-11-01 10:10:03')
+ {executed in 0 msec}
+[2024-12-30 13:03:03 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. INSERT INTO `feed_comment` (`feed_comment_id`, `feed_id`, `user_id`, `COMMENT`, `created_at`) VALUES (1, 1, 1, '1번 댓글', '2024-11-01 10:10:01'), (2, 2, 2, '2번 댓글', '2024-11-01 10:10:02'), (3, 3, 1, '3번 댓글', '2024-11-01 10:10:03'), (4, 4, 2, '4번 댓글', '2024-11-01 10:10:04'), (5, 5, 1, '5번 댓글', '2024-11-01 10:10:05'), (6, 1, 2, '6번 댓글', '2024-11-01 10:10:06')
+ {executed in 0 msec}
+[2024-12-30 13:03:03 INFO Test worker] [com.green.greengramver6.feed.FeedPicMapperTest] Started FeedPicMapperTest in 1.116 seconds (process running for 1.963)
+[2024-12-30 13:03:04 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT pic
+          FROM feed_pic
+         WHERE feed_id = 1
+ {executed in 15 msec}
+[2024-12-30 13:03:04 INFO Test worker] [jdbc.resultsettable] 
+|----|
+|pic |
+|----|
+|----|
+
+[2024-12-30 13:03:04 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. INSERT INTO feed_pic
+        ( feed_id, pic )
+        VALUES
+         (  
+            1, 'a.jpg'
+         ),( 
+            1, 'b.jpg'
+         ),( 
+            1, 'c.jpg'
+         )
+ {executed in 0 msec}
+[2024-12-30 13:03:04 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT pic
+          FROM feed_pic
+         WHERE feed_id = 1
+ {executed in 0 msec}
+[2024-12-30 13:03:04 INFO Test worker] [jdbc.resultsettable] 
+|------|
+|pic   |
+|------|
+|a.jpg |
+|b.jpg |
+|c.jpg |
+|------|
+
+[2024-12-30 13:03:04 INFO SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[2024-12-30 13:03:04 INFO SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[2024-12-30 13:04:10 INFO background-preinit] [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 8.0.1.Final
+[2024-12-30 13:04:10 INFO Test worker] [com.green.greengramver6.feed.FeedPicMapperTest] Starting FeedPicMapperTest using Java 17.0.12 with PID 4660 (started by Administrator in D:\lej\greengramtdd)
+[2024-12-30 13:04:10 INFO Test worker] [com.green.greengramver6.feed.FeedPicMapperTest] The following 1 profile is active: "test"
+[2024-12-30 13:04:11 INFO Test worker] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2024-12-30 13:04:11 INFO Test worker] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@489110c2
+[2024-12-30 13:04:11 INFO Test worker] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2024-12-30 13:04:11 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE DATABASE IF NOT EXISTS `greengram_ver3_test`
+ {executed in 0 msec}
+[2024-12-30 13:04:11 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. USE `greengram_ver3_test`
+ {executed in 0 msec}
+[2024-12-30 13:04:11 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `feed_pic`
+ {executed in 16 msec}
+[2024-12-30 13:04:11 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `feed_like`
+ {executed in 0 msec}
+[2024-12-30 13:04:11 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `feed_comment`
+ {executed in 16 msec}
+[2024-12-30 13:04:11 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `feed`
+ {executed in 0 msec}
+[2024-12-30 13:04:11 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `user_follow`
+ {executed in 8 msec}
+[2024-12-30 13:04:11 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. DROP TABLE IF EXISTS `user`
+ {executed in 0 msec}
+[2024-12-30 13:04:11 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `user` ( `user_id` bigint(20) NOT NULL AUTO_INCREMENT, `uid` varchar(30) NOT NULL, `upw` varchar(100) NOT NULL, `nick_name` varchar(30) DEFAULT NULL, `pic` varchar(50) DEFAULT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), `updated_at` datetime DEFAULT NULL ON UPDATE current_timestamp(), PRIMARY KEY (`user_id`), UNIQUE KEY `uid` (`uid`) )
+ {executed in 15 msec}
+[2024-12-30 13:04:11 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `user_follow` ( `from_user_id` bigint(20) NOT NULL, `to_user_id` bigint(20) NOT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), PRIMARY KEY (`from_user_id`,`to_user_id`), KEY `to_user_id` (`to_user_id`), CONSTRAINT `user_follow_ibfk_1` FOREIGN KEY (`from_user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE, CONSTRAINT `user_follow_ibfk_2` FOREIGN KEY (`to_user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE, CONSTRAINT `CONSTRAINT_1` CHECK (`from_user_id` <> `to_user_id`) )
+ {executed in 0 msec}
+[2024-12-30 13:04:11 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `feed` ( `feed_id` bigint(20) NOT NULL AUTO_INCREMENT, `writer_user_id` bigint(20) NOT NULL, `contents` varchar(1000) DEFAULT NULL, `location` varchar(30) DEFAULT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), `updated_at` datetime DEFAULT NULL ON UPDATE current_timestamp(), PRIMARY KEY (`feed_id`), KEY `FK_FEED_writer_user_id` (`writer_user_id`), CONSTRAINT `FK_FEED_writer_user_id` FOREIGN KEY (`writer_user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE )
+ {executed in 16 msec}
+[2024-12-30 13:04:11 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `feed_comment` ( `feed_comment_id` bigint(20) NOT NULL AUTO_INCREMENT, `feed_id` bigint(20) NOT NULL, `user_id` bigint(20) NOT NULL, `COMMENT` varchar(150) NOT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), `updated_at` datetime DEFAULT NULL ON UPDATE current_timestamp(), PRIMARY KEY (`feed_comment_id`), KEY `feed_id` (`feed_id`), KEY `user_id` (`user_id`), CONSTRAINT `feed_comment_ibfk_1` FOREIGN KEY (`feed_id`) REFERENCES `feed` (`feed_id`) ON DELETE CASCADE, CONSTRAINT `feed_comment_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE )
+ {executed in 0 msec}
+[2024-12-30 13:04:11 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `feed_like` ( `feed_id` bigint(20) NOT NULL, `user_id` bigint(20) NOT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), PRIMARY KEY (`feed_id`,`user_id`), KEY `user_id` (`user_id`), CONSTRAINT `feed_like_ibfk_1` FOREIGN KEY (`feed_id`) REFERENCES `feed` (`feed_id`) ON DELETE CASCADE, CONSTRAINT `feed_like_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE )
+ {executed in 15 msec}
+[2024-12-30 13:04:11 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. CREATE TABLE `feed_pic` ( `feed_id` bigint(20) NOT NULL, `pic` varchar(50) NOT NULL, `created_at` datetime NOT NULL DEFAULT current_timestamp(), PRIMARY KEY (`feed_id`,`pic`), CONSTRAINT `feed_pic_ibfk_1` FOREIGN KEY (`feed_id`) REFERENCES `feed` (`feed_id`) ON DELETE CASCADE )
+ {executed in 6 msec}
+[2024-12-30 13:04:11 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. INSERT INTO `user` (`user_id`, `uid`, `upw`, `nick_name`, `pic`, `created_at`) VALUES (1, 'mic', '$2a$10$cVRpfytmEdzvs1I4oqqRXOWUleJHm6xKjOnHqA3EEJ5.Q0cAtbhte', '홍길동', NULL, '2024-11-01 10:10:01'), (2, 'jacob', '$2a$10$cVRpfytmEdzvs1I4oqqRXOWUleJHm6xKjOnHqA3EEJ5.Q0cAtbhte', '제이콥', NULL, '2024-11-01 10:10:02')
+ {executed in 0 msec}
+[2024-12-30 13:04:11 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. INSERT INTO `feed` (`feed_id`, `writer_user_id`, `contents`, `location`, `created_at`, `updated_at`) VALUES (1, 1, '1번 글', '1번 위치', '2024-11-01 10:10:01', NULL), (2, 2, '2번 글', '2번 위치', '2024-11-01 10:10:02', NULL), (3, 1, '3번 글', '3번 위치', '2024-11-01 10:10:03', NULL), (4, 2, '4번 글', '4번 위치', '2024-11-01 10:10:04', NULL), (5, 1, '5번 글', '5번 위치', '2024-11-01 10:10:05', NULL)
+ {executed in 0 msec}
+[2024-12-30 13:04:11 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. INSERT INTO `feed_like` (`feed_id`, `user_id`, `created_at`) VALUES (1, 2, '2024-11-01 10:10:01'), (2, 1, '2024-11-01 10:10:02'), (3, 2, '2024-11-01 10:10:03')
+ {executed in 0 msec}
+[2024-12-30 13:04:11 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. INSERT INTO `feed_comment` (`feed_comment_id`, `feed_id`, `user_id`, `COMMENT`, `created_at`) VALUES (1, 1, 1, '1번 댓글', '2024-11-01 10:10:01'), (2, 2, 2, '2번 댓글', '2024-11-01 10:10:02'), (3, 3, 1, '3번 댓글', '2024-11-01 10:10:03'), (4, 4, 2, '4번 댓글', '2024-11-01 10:10:04'), (5, 5, 1, '5번 댓글', '2024-11-01 10:10:05'), (6, 1, 2, '6번 댓글', '2024-11-01 10:10:06')
+ {executed in 0 msec}
+[2024-12-30 13:04:11 INFO Test worker] [com.green.greengramver6.feed.FeedPicMapperTest] Started FeedPicMapperTest in 1.212 seconds (process running for 2.288)
+[2024-12-30 13:04:12 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT pic
+          FROM feed_pic
+         WHERE feed_id = 1
+ {executed in 0 msec}
+[2024-12-30 13:04:12 INFO Test worker] [jdbc.resultsettable] 
+|----|
+|pic |
+|----|
+|----|
+
+[2024-12-30 13:04:12 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. INSERT INTO feed_pic
+        ( feed_id, pic )
+        VALUES
+         (  
+            1, 'a.jpg'
+         ),( 
+            1, 'b.jpg'
+         ),( 
+            1, 'c.jpg'
+         )
+ {executed in 0 msec}
+[2024-12-30 13:04:12 DEBUGTest worker] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT pic
+          FROM feed_pic
+         WHERE feed_id = 1
+ {executed in 0 msec}
+[2024-12-30 13:04:12 INFO Test worker] [jdbc.resultsettable] 
+|------|
+|pic   |
+|------|
+|a.jpg |
+|b.jpg |
+|c.jpg |
+|------|
+
